@@ -1,0 +1,112 @@
+commit 9dbac5dfdce7e57164b7606ff8a7b03a987efc1d
+Author: Lauri Appelqvist <lauri.appelqvist@helsinki.fi>
+Date:   Tue Mar 17 19:12:58 2020 +0200
+
+    Vaihdettu tiedoston nimi file2 -> file22
+
+ tiedostoja/{file2 => file22} | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 2bc32d6f343d67dd3b447521f0f8d9efcff29622
+Author: Lauri Appelqvist <lauri.appelqvist@helsinki.fi>
+Date:   Tue Mar 17 19:12:14 2020 +0200
+
+    Poistettu file1
+
+ tiedostoja/file1 | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit f0fccad0c4d003e9facff48d391ed2b2c58039e5
+Author: Lauri Appelqvist <lauri.appelqvist@helsinki.fi>
+Date:   Tue Mar 17 19:04:33 2020 +0200
+
+    lisätty tiedostot file1, file2 ja file3
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit b208bdb1df33f3aaea8cc0a886c956bd721283b5
+Author: Lauri Appelqvist <lauri.appelqvist@helsinki.fi>
+Date:   Tue Mar 17 18:58:21 2020 +0200
+
+    Muuutettu eka.txt ja kolmas.txt
+
+ eka.txt    | 3 ++-
+ kolmas.txt | 4 +++-
+ 2 files changed, 5 insertions(+), 2 deletions(-)
+
+commit 644ec0806848068c7e67b545e7941ddb3f93cd45
+Author: Lauri Appelqvist <lauri.appelqvist@helsinki.fi>
+Date:   Tue Mar 17 18:55:35 2020 +0200
+
+    muutettu tiedoston nimeä tiedosto.txt -> eka.txt
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 8dc4de73cc2097e7d087a46bb1c00007e8642a4d
+Author: Lauri Appelqvist <lauri.appelqvist@helsinki.fi>
+Date:   Tue Mar 17 18:53:42 2020 +0200
+
+    Poistettu toinen.txt
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit c060bceae2c6d6861600727838d5048b2a52dbd2
+Author: Lauri Appelqvist <lauri.appelqvist@helsinki.fi>
+Date:   Tue Mar 17 18:51:10 2020 +0200
+
+    kopioitu tekstiä tiedostoon tiedosto.txt
+
+ tiedosto.txt | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+commit e78e8a9559236ed8c0e46964c0346d099d0e9a57
+Author: Lauri Appelqvist <lauri.appelqvist@helsinki.fi>
+Date:   Tue Mar 17 18:06:11 2020 +0200
+
+    lisätty tiedosto hakemistossa stuff
+
+ stuff/jokintiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ea7f33bd00d6fdfe58b00a3a7f110bf2384ed803
+Author: Lauri Appelqvist <lauri.appelqvist@helsinki.fi>
+Date:   Tue Mar 17 18:04:28 2020 +0200
+
+    muutettu toinen.txt ja kolmas.txt
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit ceab3f37d2bf3ce2b5c4f79e14f51d9ec99daab2
+Author: Lauri Appelqvist <lauri.appelqvist@helsinki.fi>
+Date:   Tue Mar 17 18:02:26 2020 +0200
+
+    Lisätty kolmas.txt
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 7199f4a257e70678e2c8017f10342fcb2f02d390
+Author: Lauri Appelqvist <lauri.appelqvist@helsinki.fi>
+Date:   Tue Mar 17 17:59:18 2020 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 9be363ea20e63b43697b64866df0efab75d22508
+Author: Lauri Appelqvist <lauri.appelqvist@helsinki.fi>
+Date:   Tue Mar 17 17:56:25 2020 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
