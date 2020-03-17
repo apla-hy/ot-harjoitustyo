@@ -1,3 +1,3 @@
 # Ohjelmistotekniikka
 
-Tässä *repository*:ssa on **Helsingin Yliopiston* Ohjelmistotekniikka-kurssin tietoja.
+Tässä *repository*:ssa on **Helsingin Yliopiston** Ohjelmistotekniikka-kurssin tietoja.
