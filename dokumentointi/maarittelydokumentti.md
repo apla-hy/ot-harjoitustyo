@@ -37,8 +37,9 @@ Sovellus aukeaa päävalikkoon. Päävalikosta siirrytään harjoitusnäkymään
 Perusversion jälkeen sovellusta mahdollisesti laajennetaan seuraavilla toiminnallisuuksilla:
 * Harjoitukseen voi valita myös muita sanaluokkia kuin verbit.
 * Harjoituksen vastaus tarkistetaan, eli käyttäjälle kerrotaan oliko vastaus oikein vai väärin.
+* Tarkastus hyväksyy tavalliset merkit erikoismerkkien tilalle mutta huomauttaa niistä keltaisella värillä (esim. vastauksessa n hyväksytään vaikka pitäisi olla ñ).
 * Sovelluksessa on pistelaskujärjestelmä eli oikeista vastauksista saa pisteitä ja kokonaispisteistä pidetään kirjaa.
-* Harjoituksen voi tallentaa eli harjoituksen, jossa on täsmälleen samat kysymykset, voi tehdä uudelleen.
+* Harjoituksen voi tallentaa. Toisin sanoen täsmälleen saman harjoituksen voi tehdä uudestaan, vaikka kysymykset olisi valittu satunnaisessa järjestyksessä.
 
 
 
