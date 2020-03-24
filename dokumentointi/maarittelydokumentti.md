@@ -10,6 +10,8 @@ Sovelluksella on vain yksi käyttäjäryhmä eli kaikki käyttäjät voivat käy
 
 ## Käyttöliittymäluonnos
 
+(kayttoliittymaluonnos.png)
+
 Sovellus aukeaa päävalikkoon. Päävalikosta siirrytään harjoitusnäkymään painamalla Aloitus-nappia. Harjoitus tehdään harjoitusnäkymässä ja siitä voi poistua painamalla Lopetus-nappia. Päävalikkoon siirrytään myös, kun kaikkiin kysymyksiin on vastattu.
 
 
