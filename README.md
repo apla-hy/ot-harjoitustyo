@@ -1,18 +1,39 @@
-# Ohjelmistotekniikka, harjoitustyö
+# LanguageTrainer
 
-Tässä *repository*:ssa on **Helsingin Yliopiston** Ohjelmistotekniikka-kurssin tietoja.
+Sovelluksen avulla suomenkielentaitoinen henkilö voi opetella espanjan sanastoa.
 
-## Tehtävät
+## Dokumentaatio
 
-### Viikko 1
+[Vaatimusmäärittely](https://github.com/apla-hy/ot-harjoitustyo/blob/master/dokumentointi/maarittelydokumentti.md)
 
-[gitlog.txt](https://github.com/apla-hy/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
+[Työaikakirjanpito](https://github.com/apla-hy/ot-harjoitustyo/blob/master/dokumentointi/tyoaikakirjanpito.md)
 
-[komentorivi.txt](https://github.com/apla-hy/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
+## Komentorivitoiminnot
 
-### Viikko 2
+### Testaus
 
-[vaatimusmäärittely](https://github.com/apla-hy/ot-harjoitustyo/blob/master/dokumentointi/maarittelydokumentti.md)
+Testit suoritetaan komennolla
 
-[työaikakirjanpito](https://github.com/apla-hy/ot-harjoitustyo/blob/master/dokumentointi/tyoaikakirjanpito.md)
+```
+mvn test
+```
+
+Testikattavuusraportti luodaan komennolla
+
+```
+mvn jacoco:report
+```
+
+Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto *target/site/jacoco/index.html*.
+
+### Suorittaminen
+
+Projektin koodin pystyy suorittamaan NetBeansin vihreällä napilla tai komennolla
+
+```
+mvn compile exec:java -Dexec.mainClass=languagetrainer.uitext.Main
+```
+ 
+
+
 
