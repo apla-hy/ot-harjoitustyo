@@ -41,7 +41,7 @@ public class UserInterfaceText {
             
             System.out.println("Mitä on " + tasks.get(questionNumber).getQuestion() + " espanjaksi?");
             for (int i=0; i < questions.length; i++) {
-                System.out.print(questions[i] + ": ");
+                System.out.println(questions[i] + ": ");
                 answers[i] = reader.nextLine().trim();
             }
 
