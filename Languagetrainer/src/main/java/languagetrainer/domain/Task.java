@@ -9,22 +9,39 @@ package languagetrainer.domain;
  *
  * @author lauri
  */
-public class Task {
-    private String Question;
-    private String Answer;
+import java.util.ArrayList;
 
-    public Task(String Question, String Answer) {
-        this.Question = Question;
-        this.Answer = Answer;
+public class Task {
+    private Language questionLanguage;
+    private Language answerLanguage;
+    private WordType type;
+    private WordTense tense;
+    private String question;
+    private ArrayList<String> answer;
+
+    public Task(Language questionLanguage, Language answerLanguage, WordType type,WordTense tense, String question, ArrayList<String> answer) {
+        this.questionLanguage = questionLanguage;
+        this.answerLanguage = answerLanguage;
+        this.type = type;
+        this.tense = tense;
+        this.question = question;
+        this.answer = answer;
     }
 
     public String getQuestion() {
-        return Question;
+        return question;
     }
 
-    public String getAnswer() {
-        return Answer;
+    public ArrayList<String> getAnswer() {
+        return answer;
     }
+
+    @Override
+    public String toString() {
+        return this.question + ", " + this.answer.get(0);
+    }
+    
+    
     
     
     

@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 
-import languagetrainer.domain.Task;
+import java.util.ArrayList;
+import languagetrainer.domain.*;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -45,10 +46,12 @@ public class TaskTest {
     
     @Test
     public void taskQuestionSetCorrectly() {
-        Task task1 = new Task("Comer", "Syödä");
+        ArrayList<String> answers = new ArrayList<>();
+        answers.add("Comer");
+        Task task1 = new Task(Language.FINNISH, Language.SPANISH, WordType.VERB, WordTense.PRESENT, "Syödä", answers);
 
         String result = task1.getQuestion();
 
-        assertEquals("Comer", result);
+        assertEquals("Syödä", result);
 }
 }

@@ -7,6 +7,8 @@ package languagetrainer.uitext;
 
 import languagetrainer.domain.*;
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Random;
 
 /**
  *
@@ -24,11 +26,42 @@ public class UserInterfaceText {
     
     public void start() {
         
-        Task task1 = new Task("Comer", "Syödä");
+        TaskList taskList = new TaskList();
+        ArrayList<Task> tasks = taskList.getTasks();
         
-        System.out.println(task1.getQuestion());
-        System.out.println(task1.getAnswer());
+        // Ask questions in random order
+                
+        while (true) {
+            
+            Random rng = new Random();
+            int questionNumber = rng.nextInt(tasks.size());
+            
+            String questions[] = {"Perusmuoto"," Minä", "Sinä", "Hän", "Me", "Te", "He"};
+            String answers[] = new String[7];
+            
+            System.out.println("Mitä on " + tasks.get(questionNumber).getQuestion() + " espanjaksi?");
+            for (int i=0; i < questions.length; i++) {
+                System.out.print(questions[i] + ": ");
+                answers[i] = reader.nextLine().trim();
+            }
+
+            System.out.println("Vastaukset:");
+            for (int i=0; i < questions.length; i++) {
+                System.out.println("Vastauksesi: " + answers[i] + ", Oikea vastaus: " + tasks.get(questionNumber).getAnswer().get(i));
+            }
+            
+            System.out.println("Jatketaanko? Lopetus painamalla q");
+            String row = reader.nextLine().trim();
+            
+            // Stop if input is "q"
+            if (row.equals("q")) {
+                break;
+            }
+            
+        }   
+        
         
     }
-    
+        
 }
+    
