@@ -16,29 +16,35 @@ import java.io.File;
 public class TaskList {
     private ArrayList<Task> tasks;
 
-    public TaskList() {
+    public TaskList(ArrayList<String> dataFiles) {
         this.tasks = new ArrayList<>();
-        this.LoadVerbsSpanish("espanjanverbilista.csv");
-        
-        // Add dummy task for testing exercise options
-        ArrayList<String> dummyAnswers = new ArrayList<>();
-        dummyAnswers.add("Answer1");
-        Task taskNew = new Task(Language.SPANISH, Language.FINNISH, WordType.NOUN, WordTense.IMPERFECT, "Question", dummyAnswers);
-        this.tasks.add(taskNew);
+        for (String dataFile: dataFiles) {
+            this.LoadVerbsSpanish(dataFile);
+        }
     }
     
     private void LoadVerbsSpanish(String sourceFile) {
         
         try (Scanner fileReader = new Scanner(new File(sourceFile))) {
+            
+            // Read header row
+            String row = fileReader.nextLine();
+            String[] parts = row.split(",");
+            Language questionLanguage = Language.valueOf(parts[0].trim());
+            Language answerLanguage = Language.valueOf(parts[1].trim());
+            WordType type = WordType.valueOf(parts[2].trim());
+            WordTense tense = WordTense.valueOf(parts[3].trim());
+            
+            // Read data rows
             while (fileReader.hasNextLine()) {
-                String row = fileReader.nextLine();
-                String[] parts = row.split(",");
+                row = fileReader.nextLine();
+                parts = row.split(",");
                 String question = parts[7].trim();
                 ArrayList<String> answers = new ArrayList<>();
                 for (int i = 0; i < 7; i++) {
                     answers.add(parts[i].trim());
                 }
-                Task taskNew = new Task(Language.FINNISH, Language.SPANISH, WordType.VERB, WordTense.PRESENT, question, answers);
+                Task taskNew = new Task(questionLanguage, answerLanguage, type, tense, question, answers);
                 this.tasks.add(taskNew);
             }
         } catch (Exception e) {

@@ -53,19 +53,5 @@ public class Task {
     }
 
     
-   
-    
-    
-    
-
-    @Override
-    public String toString() {
-        return this.question + ", " + this.answer.get(0);
-    }
-    
-    
-    
-    
-    
     
 }
