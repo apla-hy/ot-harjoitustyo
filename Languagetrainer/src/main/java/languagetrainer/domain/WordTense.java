@@ -10,5 +10,6 @@ package languagetrainer.domain;
  * @author lauri
  */
 public enum WordTense {
-    PRESENT
+    PRESENT,
+    IMPERFECT
 }

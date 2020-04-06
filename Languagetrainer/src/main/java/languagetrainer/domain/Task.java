@@ -36,6 +36,28 @@ public class Task {
         return answer;
     }
 
+    public Language getQuestionLanguage() {
+        return questionLanguage;
+    }
+
+    public Language getAnswerLanguage() {
+        return answerLanguage;
+    }
+
+    public WordType getType() {
+        return type;
+    }
+    
+    public WordTense getTense() {
+        return tense;
+    }
+
+    
+   
+    
+    
+    
+
     @Override
     public String toString() {
         return this.question + ", " + this.answer.get(0);

@@ -19,6 +19,12 @@ public class TaskList {
     public TaskList() {
         this.tasks = new ArrayList<>();
         this.LoadVerbsSpanish("espanjanverbilista.csv");
+        
+        // Add dummy task for testing exercise options
+        ArrayList<String> dummyAnswers = new ArrayList<>();
+        dummyAnswers.add("Answer1");
+        Task taskNew = new Task(Language.SPANISH, Language.FINNISH, WordType.NOUN, WordTense.IMPERFECT, "Question", dummyAnswers);
+        this.tasks.add(taskNew);
     }
     
     private void LoadVerbsSpanish(String sourceFile) {
@@ -44,4 +50,52 @@ public class TaskList {
         return tasks;
     }
     
+    
+    // Return possible question languages based on available tasks
+    public ArrayList<Language> getQuestionLanguages() {
+        ArrayList<Language> questionLanguages = new ArrayList<>();
+        for (Task task: this.tasks) {
+            Language questionLanguage = task.getQuestionLanguage();
+            if (!questionLanguages.contains(questionLanguage)) {
+                questionLanguages.add(questionLanguage);
+            }
+        }
+        return questionLanguages;
+    }
+    
+    // Return possible answer languages based on available tasks
+    public ArrayList<Language> getAnswerLanguages() {
+        ArrayList<Language> answerLanguages = new ArrayList<>();
+        for (Task task: this.tasks) {
+            Language answerLanguage = task.getAnswerLanguage();
+            if (!answerLanguages.contains(answerLanguage)) {
+                answerLanguages.add(answerLanguage);
+            }
+        }
+        return answerLanguages;
+    }
+
+    // Return possible word types based on available tasks
+    public ArrayList<WordType> getTypes() {
+        ArrayList<WordType> types = new ArrayList<>();
+        for (Task task: this.tasks) {
+            WordType type = task.getType();
+            if (!types.contains(type)) {
+                types.add(type);
+            }
+        }
+        return types;
+    }
+    
+    // Return possible word tenses based on available tasks
+    public ArrayList<WordTense> getTenses() {
+        ArrayList<WordTense> tenses = new ArrayList<>();
+        for (Task task: this.tasks) {
+            WordTense tense = task.getTense();
+            if (!tenses.contains(tense)) {
+                tenses.add(tense);
+            }
+        }
+        return tenses;
+    }
 }

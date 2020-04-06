@@ -10,5 +10,6 @@ package languagetrainer.domain;
  * @author lauri
  */
 public enum WordType {
-    VERB
+    VERB,
+    NOUN
 }

@@ -53,5 +53,7 @@ public class TaskTest {
         String result = task1.getQuestion();
 
         assertEquals("Syödä", result);
-}
+    }
+    
+    
 }
