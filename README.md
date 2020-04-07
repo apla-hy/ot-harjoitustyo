@@ -4,9 +4,13 @@ Sovelluksen avulla suomenkielentaitoinen henkilö voi opetella espanjan sanastoa
 
 Sovellus tarvitsee toimiakseen tiedoston *espanjanverbilista.csv* sovelluksen juurihakemistoon.
 
+Osa testeistä tarvitsee toimiakseen tiedoston *taskListForTestingOptions.csv* sovelluksen juurihakemistoon.
+
 ## Dokumentaatio
 
 [Vaatimusmäärittely](https://github.com/apla-hy/ot-harjoitustyo/blob/master/dokumentointi/maarittelydokumentti.md)
+
+[Arkkitehtuurikuvaus](https://github.com/apla-hy/ot-harjoitustyo/blob/master/dokumentointi/arkkitehtuuri.md)
 
 [Työaikakirjanpito](https://github.com/apla-hy/ot-harjoitustyo/blob/master/dokumentointi/tyoaikakirjanpito.md)
 
@@ -35,7 +39,14 @@ Projektin koodin pystyy suorittamaan NetBeansin vihreällä napilla tai komennol
 ```
 mvn compile exec:java -Dexec.mainClass=languagetrainer.uitext.Main
 ```
- 
+
+### Checkstyle
+
+Tiedoston *checkstyle.xml* määrittelemät tarkistukset suoritetaan komennolla
+```
+mvn jxr:jxr checkstyle:checkstyle
+```
+Mahdolliset virheilmoitukset selviävät avaamalla selaimella tiedosto *target/site/checkstyle.html*.
 
 
 
