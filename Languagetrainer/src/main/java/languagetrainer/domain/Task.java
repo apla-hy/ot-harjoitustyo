@@ -19,7 +19,7 @@ public class Task {
     private String question;
     private ArrayList<String> answer;
 
-    public Task(Language questionLanguage, Language answerLanguage, WordType type,WordTense tense, String question, ArrayList<String> answer) {
+    public Task(Language questionLanguage, Language answerLanguage, WordType type, WordTense tense, String question, ArrayList<String> answer) {
         this.questionLanguage = questionLanguage;
         this.answerLanguage = answerLanguage;
         this.type = type;

@@ -19,17 +19,16 @@ public class TaskList {
     public TaskList(ArrayList<String> dataFiles) {
         this.tasks = new ArrayList<>();
         for (String dataFile: dataFiles) {
-            this.LoadVerbsSpanish(dataFile);
+            this.loadVerbsSpanish(dataFile);
         }
     }
     
-    private void LoadVerbsSpanish(String sourceFile) {
+    private void loadVerbsSpanish(String sourceFile) {
         
         try (Scanner fileReader = new Scanner(new File(sourceFile))) {
             
             // Read header row
-            String row = fileReader.nextLine();
-            String[] parts = row.split(",");
+            String[] parts = fileReader.nextLine().split(",");
             Language questionLanguage = Language.valueOf(parts[0].trim());
             Language answerLanguage = Language.valueOf(parts[1].trim());
             WordType type = WordType.valueOf(parts[2].trim());
@@ -37,15 +36,13 @@ public class TaskList {
             
             // Read data rows
             while (fileReader.hasNextLine()) {
-                row = fileReader.nextLine();
-                parts = row.split(",");
+                parts = fileReader.nextLine().split(",");
                 String question = parts[7].trim();
                 ArrayList<String> answers = new ArrayList<>();
                 for (int i = 0; i < 7; i++) {
                     answers.add(parts[i].trim());
                 }
-                Task taskNew = new Task(questionLanguage, answerLanguage, type, tense, question, answers);
-                this.tasks.add(taskNew);
+                this.tasks.add(new Task(questionLanguage, answerLanguage, type, tense, question, answers));
             }
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());

@@ -52,7 +52,7 @@ public class Exercise {
             return null;        
         }
         this.currentTask++;
-        return this.exerciseTasks.get(this.currentTask-2);
+        return this.exerciseTasks.get(this.currentTask - 2);
     }
     
 }
