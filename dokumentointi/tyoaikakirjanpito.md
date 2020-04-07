@@ -10,5 +10,5 @@ päivä | aika | mitä tein
 6.4. | 2 | Aloitettu luokan Exercise toteutus. Lisätty harjoitusvalinnat tekstikäyttöliittymään.
 6.4. | 3 | Jatkettu luokan Exercise toteutusta. Muokattu tekstikäyttöliittymää. Luotu testit luokille Task ja TaskList.
 6.4. | 1 | Tehty alustava luokkakaavio.
-7.4. | 2 | Otettu checkstyle käyttöön. Tehty pieniä parannuksia. Päivitetty dokumentaatio.
-yht | 19 |
+7.4. | 3 | Otettu checkstyle käyttöön. Tehty pieniä parannuksia. Päivitetty dokumentaatio. Testattu, että sovellus toimii Yliopiston ympäristössä.
+yht | 20 |
