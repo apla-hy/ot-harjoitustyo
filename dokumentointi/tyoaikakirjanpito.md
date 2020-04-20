@@ -11,4 +11,5 @@ päivä | aika | mitä tein
 6.4. | 3 | Jatkettu luokan Exercise toteutusta. Muokattu tekstikäyttöliittymää. Luotu testit luokille Task ja TaskList.
 6.4. | 1 | Tehty alustava luokkakaavio.
 7.4. | 3 | Otettu checkstyle käyttöön. Tehty pieniä parannuksia. Päivitetty dokumentaatio. Testattu, että sovellus toimii Yliopiston ympäristössä.
-yht | 20 |
+20.4. | 3 | Selvitetty Netbeansin hitausongelmaa. Toteutettu luokkaan Exercise kysymysten järjestyksen valinta ja lisätty toiminto tekstikäyttöliittymään. Kirjoitettu testejä Exercise-luokalle.
+yht | 23 |
