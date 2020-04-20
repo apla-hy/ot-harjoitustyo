@@ -12,4 +12,6 @@ päivä | aika | mitä tein
 6.4. | 1 | Tehty alustava luokkakaavio.
 7.4. | 3 | Otettu checkstyle käyttöön. Tehty pieniä parannuksia. Päivitetty dokumentaatio. Testattu, että sovellus toimii Yliopiston ympäristössä.
 20.4. | 3 | Selvitetty Netbeansin hitausongelmaa. Toteutettu luokkaan Exercise kysymysten järjestyksen valinta ja lisätty toiminto tekstikäyttöliittymään. Kirjoitettu testejä Exercise-luokalle.
-yht | 23 |
+20.4. | 1 | Otettu JavaFX käyttöön projektissa. Muutettu rakennetta siten, että graafinen käyttöliittymä käynnistyy ja jar-paketin luonti onnistuu.
+20.4. | 4 | Aloitettu graafisen käyttöliittymän toteutus. Toteutettu yhden valintalistan arvojen käännös suomeksi käyttöliittymää varten.
+yht | 28 |
