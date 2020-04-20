@@ -11,7 +11,7 @@ package languagetrainer.domain;
  */
 import java.util.ArrayList;
 
-public class Task {
+public class Task implements Comparable<Task> {
     private Language questionLanguage;
     private Language answerLanguage;
     private WordType type;
@@ -52,6 +52,11 @@ public class Task {
         return tense;
     }
 
-    
+    @Override
+    public int compareTo(Task task) {
+        return this.answer.get(0).compareTo(task.getAnswer().get(0));
+    }
+
+
     
 }

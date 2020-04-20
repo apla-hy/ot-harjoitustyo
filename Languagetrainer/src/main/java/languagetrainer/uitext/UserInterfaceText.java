@@ -32,11 +32,12 @@ public class UserInterfaceText {
         TaskList taskList = new TaskList(files);
         ArrayList<Task> tasks = taskList.getTasks();
         
-        // Find out what options are available
+        // Find out / specify what options are available
         ArrayList<Language> questionLanguages = taskList.getQuestionLanguages();
         ArrayList<Language> answerLanguages = taskList.getAnswerLanguages();
         ArrayList<WordType> types = taskList.getTypes();
         ArrayList<WordTense> tenses = taskList.getTenses();
+        ExerciseOrder order[] = { ExerciseOrder.ASCENDING, ExerciseOrder.DESCENDING, ExerciseOrder.RANDOM };
         
         // Ask exercise options
         System.out.println("Luodaan uusi harjoitus.");
@@ -88,8 +89,17 @@ public class UserInterfaceText {
         row = reader.nextLine();
         int selectedNumberOfQuestions = Integer.valueOf(row);
         
+        // Order of questions
+        System.out.println("Valitse kysymysten järjestys. Vaihtoehdot:");
+        for (int i = 0; i < order.length; i++) {
+            System.out.println(i + 1 + ": " + order[i]);
+        }
+        row = reader.nextLine();
+        int index = Integer.valueOf(row);
+        ExerciseOrder selectedOrder = order[index - 1];
+        
         // Create the exercise with selected options
-        Exercise exercise = new Exercise(tasks, selectedQuestionLanguage, selectedAnswerLanguage, selectedTypes, selectedTenses, selectedNumberOfQuestions);
+        Exercise exercise = new Exercise(tasks, selectedQuestionLanguage, selectedAnswerLanguage, selectedTypes, selectedTenses, selectedNumberOfQuestions, selectedOrder);
         
         // Ask exercise questions
 
