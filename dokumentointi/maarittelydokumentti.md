@@ -22,8 +22,8 @@ Sovellus aukeaa päävalikkoon. Päävalikosta siirrytään harjoitusnäkymään
 	* *Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
 * Päävalikossa käyttäjä voi valita sopivan harjoituksen. Vaihtoehtoja ovat:
 	* Harjoittelun suunta (suomi - espanja tai espanja - suomi)
-		*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
-		*Tilanne (viikko 5): toteutettu graafisella käyttöliittymällä.*
+		* *Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
+		* *Tilanne (viikko 5): toteutettu graafisella käyttöliittymällä.*
 	* Harjoituksen sisältämät aikamuodot (preesens, imperfekti, ...)
 		*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
 		*Tilanne (viikko 5): toteutettu graafisella käyttöliittymällä.*
