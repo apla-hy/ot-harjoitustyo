@@ -6,4 +6,5 @@
 
 <suppressions>
     <suppress files="languagetrainer.uitext.UserInterfaceText.java" checks="[a-zA-Z0-9]*"/>
+    <suppress files="languagetrainer.ui.UserInterfaceGraphical.java" checks="[a-zA-Z0-9]*"/>
 </suppressions>

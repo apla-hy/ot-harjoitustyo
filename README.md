@@ -37,7 +37,7 @@ Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto *target/site/ja
 Projektin koodin pystyy suorittamaan NetBeansin vihreällä napilla tai komennolla
 
 ```
-mvn compile exec:java -Dexec.mainClass=languagetrainer.uitext.Main
+mvn compile exec:java -Dexec.mainClass=languagetrainer.main.Main
 ```
 
 ### Checkstyle
