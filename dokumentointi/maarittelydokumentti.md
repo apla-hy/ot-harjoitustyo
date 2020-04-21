@@ -18,8 +18,8 @@ Sovellus aukeaa päävalikkoon. Päävalikosta siirrytään harjoitusnäkymään
 ## Perusversion tarjoama toiminnallisuus
 
 * Perusversiossa on mahdollista opetella ainoastaan verbejä eri aikamuodoissa.
-	*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
-	*Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
+	*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.
+	*Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.
 * Päävalikossa käyttäjä voi valita sopivan harjoituksen. Vaihtoehtoja ovat:
 	* Harjoittelun suunta (suomi - espanja tai espanja - suomi)
 		*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
