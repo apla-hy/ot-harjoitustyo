@@ -14,4 +14,7 @@ päivä | aika | mitä tein
 20.4. | 3 | Selvitetty Netbeansin hitausongelmaa. Toteutettu luokkaan Exercise kysymysten järjestyksen valinta ja lisätty toiminto tekstikäyttöliittymään. Kirjoitettu testejä Exercise-luokalle.
 20.4. | 1 | Otettu JavaFX käyttöön projektissa. Muutettu rakennetta siten, että graafinen käyttöliittymä käynnistyy ja jar-paketin luonti onnistuu.
 20.4. | 4 | Aloitettu graafisen käyttöliittymän toteutus. Toteutettu yhden valintalistan arvojen käännös suomeksi käyttöliittymää varten.
-yht | 28 |
+21.4. | 2 | Testattu virtuaalityöpöydän avulla, että sovelluksen nykyinen versio toimii Yliopiston ympäristössä. Jatkettu graafisen käyttöliittymän toteutusta.
+21.4. | 2 | Jatkettu graafisen käyttöliittymän toteutusta. Tehty 1. release. Muokattu tiedostoja readme.MD ja vaatimusmäärittely.
+21.4. | 1 | Tehty sekvenssikaavio. Testattu virtuaalityöpöydän avulla, että sovelluksen nykyinen versio toimii Yliopiston ympäristössä. Päivitetty tuntikirjanpito.
+yht | 33 |
