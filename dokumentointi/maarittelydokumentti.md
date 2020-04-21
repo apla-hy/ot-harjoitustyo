@@ -25,38 +25,38 @@ Sovellus aukeaa päävalikkoon. Päävalikosta siirrytään harjoitusnäkymään
 		* *Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
 		* *Tilanne (viikko 5): toteutettu graafisella käyttöliittymällä.*
 	* Harjoituksen sisältämät aikamuodot (preesens, imperfekti, ...)
-		*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
-		*Tilanne (viikko 5): toteutettu graafisella käyttöliittymällä.*
+		* *Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
+		* *Tilanne (viikko 5): toteutettu graafisella käyttöliittymällä.*
 	* Kysymysten määrä
-		*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
-		*Tilanne (viikko 5): toteutettu graafisella käyttöliittymällä.*
+		* *Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
+		* *Tilanne (viikko 5): toteutettu graafisella käyttöliittymällä.*
 	* Kysymysten järjestys (satunnainen tai aakkosjärjestys)
-		*Tilanne (viikko 4): ei toteutettu.*
-		*Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä ja graafisella käyttöliittymällä.*
+		* *Tilanne (viikko 4): ei toteutettu.*
+		* *Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä ja graafisella käyttöliittymällä.*
 * Valintojen jälkeen on mahdollista aloittaa harjoituksen tekeminen.
-	*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
-	*Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
+	* *Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
+	* *Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
 * Harjoitusnäytössä käyttäjä näkee kysymyksen ja voi vastata siihen.
-	*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
-	*Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
+	* *Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
+	* *Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
 * Tietystä verbistä kysytään kaikki persoonamuodot (esim. istun, istut, istuu, ...).
-	*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
-	*Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
+	* *Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
+	* *Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
 * Vastauksen jälkeen käyttäjä näkee oikean vastauksen.
-	*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
-	*Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
+	* *Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
+	* *Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
 * Kysymyksiin vastataan yksi kerrallaan.
-	*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
-	*Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
+	* *Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
+	* *Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
 * Harjoitus loppuu, kun kaikkiin kysymyksiin on vastattu.
-	*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
-	*Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
+	* *Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
+	* *Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
 * Käyttäjän on mahdollista lopettaa harjoitus kesken.
-	*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
-	*Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
+	* *Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
+	* *Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
 * Käyttöliittymän kautta ei voi lisätä uusia verbejä vaan sanaston ylläpito tehdään muokkaamalla tiedostoja.
-	*Tilanne (viikko 4): alustava tiedostojen lukeminen toteutettu.*
-	*Tilanne (viikko 5): alustava tiedostojen lukeminen toteutettu.*
+	* *Tilanne (viikko 4): alustava tiedostojen lukeminen toteutettu.*
+	* *Tilanne (viikko 5): alustava tiedostojen lukeminen toteutettu.*
 
 # Jatkokehitysideoita
 
