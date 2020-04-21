@@ -1,6 +1,6 @@
 # LanguageTrainer
 
-Sovelluksen avulla suomenkielentaitoinen henkilö voi opetella espanjan sanastoa. Nykyisellä versiolla voi harjoitella preesensin verbejä suomesta espanjaksi tekstikäyttöliittymällä.
+Sovelluksen avulla suomenkielentaitoinen henkilö voi opetella espanjan sanastoa. Nykyisellä versiolla voi harjoitella preesensin verbejä suomesta espanjaksi tekstikäyttöliittymällä. Graafisen käyttöliittymän toteutus on aloitettu mutta se ei ole vielä valmis.
 
 Sovellus tarvitsee toimiakseen tiedoston *espanjanverbilista.csv* sovelluksen juurihakemistoon.
 
