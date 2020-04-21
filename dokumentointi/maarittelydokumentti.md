@@ -17,20 +17,46 @@ Sovellus aukeaa päävalikkoon. Päävalikosta siirrytään harjoitusnäkymään
 
 ## Perusversion tarjoama toiminnallisuus
 
-* Perusversiossa on mahdollista opetella ainoastaan verbejä eri aikamuodoissa. *Tilanne: toteutettu tekstikäyttöliittymällä.*
+* Perusversiossa on mahdollista opetella ainoastaan verbejä eri aikamuodoissa.
+	*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
+	*Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
 * Päävalikossa käyttäjä voi valita sopivan harjoituksen. Vaihtoehtoja ovat:
-	* Harjoittelun suunta (suomi - espanja tai espanja - suomi) *Tilanne: toteutettu tekstikäyttöliittymällä.*
-	* Harjoituksen sisältämät aikamuodot (preesens, imperfekti, ...) *Tilanne: toteutettu tekstikäyttöliittymällä.*
-	* Kysymysten määrä *Tilanne: toteutettu tekstikäyttöliittymällä.*
+	* Harjoittelun suunta (suomi - espanja tai espanja - suomi)
+		*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
+		*Tilanne (viikko 5): toteutettu graafisella käyttöliittymällä.*
+	* Harjoituksen sisältämät aikamuodot (preesens, imperfekti, ...)
+		*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
+		*Tilanne (viikko 5): toteutettu graafisella käyttöliittymällä.*
+	* Kysymysten määrä
+		*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
+		*Tilanne (viikko 5): toteutettu graafisella käyttöliittymällä.*
 	* Kysymysten järjestys (satunnainen tai aakkosjärjestys)
-* Valintojen jälkeen on mahdollista aloittaa harjoituksen tekeminen. *Tilanne: toteutettu tekstikäyttöliittymällä.*
-* Harjoitusnäytössä käyttäjä näkee kysymyksen ja voi vastata siihen. *Tilanne: toteutettu tekstikäyttöliittymällä.*
-* Tietystä verbistä kysytään kaikki persoonamuodot (esim. istun, istut, istuu, ...). *Tilanne: toteutettu tekstikäyttöliittymällä.*
-* Vastauksen jälkeen käyttäjä näkee oikean vastauksen. *Tilanne: toteutettu tekstikäyttöliittymällä.*
-* Kysymyksiin vastataan yksi kerrallaan. *Tilanne: toteutettu tekstikäyttöliittymällä.*
-* Harjoitus loppuu, kun kaikkiin kysymyksiin on vastattu. *Tilanne: toteutettu tekstikäyttöliittymällä.*
-* Käyttäjän on mahdollista lopettaa harjoitus kesken. *Tilanne: toteutettu tekstikäyttöliittymällä.*
-* Käyttöliittymän kautta ei voi lisätä uusia verbejä vaan sanaston ylläpito tehdään muokkaamalla tiedostoja. *Tilanne: alustava tiedostojen lukeminen toteutettu.*
+		*Tilanne (viikko 4): ei toteutettu.*
+		*Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä ja graafisella käyttöliittymällä.*
+* Valintojen jälkeen on mahdollista aloittaa harjoituksen tekeminen.
+	*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
+	*Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
+* Harjoitusnäytössä käyttäjä näkee kysymyksen ja voi vastata siihen.
+	*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
+	*Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
+* Tietystä verbistä kysytään kaikki persoonamuodot (esim. istun, istut, istuu, ...).
+	*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
+	*Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
+* Vastauksen jälkeen käyttäjä näkee oikean vastauksen.
+	*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
+	*Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
+* Kysymyksiin vastataan yksi kerrallaan.
+	*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
+	*Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
+* Harjoitus loppuu, kun kaikkiin kysymyksiin on vastattu.
+	*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
+	*Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
+* Käyttäjän on mahdollista lopettaa harjoitus kesken.
+	*Tilanne (viikko 4): toteutettu tekstikäyttöliittymällä.*
+	*Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
+* Käyttöliittymän kautta ei voi lisätä uusia verbejä vaan sanaston ylläpito tehdään muokkaamalla tiedostoja.
+	*Tilanne (viikko 4): alustava tiedostojen lukeminen toteutettu.*
+	*Tilanne (viikko 5): alustava tiedostojen lukeminen toteutettu.*
 
 # Jatkokehitysideoita
 
@@ -42,7 +68,3 @@ Perusversion jälkeen sovellusta mahdollisesti laajennetaan seuraavilla toiminna
 * Harjoituksen voi tallentaa. Toisin sanoen täsmälleen saman harjoituksen voi tehdä uudestaan, vaikka kysymykset olisi valittu satunnaisessa järjestyksessä.
 * Käyttöliittymän kautta voi lisätä uusia sanoja.
 * Käyttöliitymän kautta voi lisätä tiettyyn sanaan muistiinpanoja ja käyttöesimerkkejä.
-
-
-
-
