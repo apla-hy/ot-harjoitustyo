@@ -14,6 +14,10 @@ Osa testeistä tarvitsee toimiakseen tiedoston *taskListForTestingOptions.csv* s
 
 [Työaikakirjanpito](https://github.com/apla-hy/ot-harjoitustyo/blob/master/dokumentointi/tyoaikakirjanpito.md)
 
+## Releaset
+
+[Viikko 5](https://github.com/apla-hy/ot-harjoitustyo/releases)
+
 ## Komentorivitoiminnot
 
 ### Testaus
@@ -39,6 +43,14 @@ Projektin koodin pystyy suorittamaan NetBeansin vihreällä napilla tai komennol
 ```
 mvn compile exec:java -Dexec.mainClass=languagetrainer.main.Main
 ```
+### Suoritettavan jarin generointi
+
+Komento
+
+```
+mvn package
+```
+generoi hakemistoon target suoritettavan jar-tiedoston. Jar-tiedoston kanssa samassa hakemistossa pitää olla tiedosto *espanjanverbilista.csv*.
 
 ### Checkstyle
 
