@@ -34,6 +34,7 @@ import javafx.scene.control.Button;
 public class UserInterfaceGraphical extends Application {
     
     private Scene exerciseOptionsScene;
+    private Exercise exercise;
     
     @Override
     public void start(Stage primaryStage) {
@@ -41,7 +42,7 @@ public class UserInterfaceGraphical extends Application {
         // Create task list
         ArrayList<String> files = new ArrayList<>();
         files.add("espanjanverbilista.csv");
-        files.add("taskListForTestingOptions.csv");
+        //files.add("taskListForTestingOptions.csv");
         TaskList taskList = new TaskList(files);
         ArrayList<Task> tasks = taskList.getTasks();
         
@@ -88,7 +89,7 @@ public class UserInterfaceGraphical extends Application {
         // Create components
         BorderPane exerciseOptionsPane = new BorderPane();
         VBox centerPane = new VBox(12);
-        HBox bottomPane = new HBox(12);
+        HBox bottomPane = new HBox(2);
         centerPane.setSpacing(10);
         
         // Main text
@@ -154,11 +155,16 @@ public class UserInterfaceGraphical extends Application {
                     selectedTenses.add(tenses.get(i));
                 }
             }
-            String selectedNumberOfTasks = tfNumberOfTasks.getText();
             selection = choiceExerciseOrder.getValue();
             ExerciseOrder selectedOrder = orders.get(options6.indexOf(selection));
-            statusText.setText(selectedQuestionLanguage.toString() + " " + selectedAnswerLanguage.toString() + " " + selectedTypes + " " + selectedTenses + " " + selectedNumberOfTasks+ " " + selectedOrder);
-            this.startExercise(tasks, selectedQuestionLanguage, selectedAnswerLanguage, selectedTypes, selectedTenses, Integer.valueOf(selectedNumberOfTasks), selectedOrder);
+            selection = tfNumberOfTasks.getText();
+            if (this.isInteger(selection)) {
+                int selectedNumberOfTasks = Integer.valueOf(selection);
+                boolean result = this.startExercise(tasks, selectedQuestionLanguage, selectedAnswerLanguage, selectedTypes, selectedTenses, selectedNumberOfTasks, selectedOrder);
+                if (result) statusText.setText("Harjoitus luotu");
+            } else {
+                statusText.setText("Virheellinen luku");
+            }
         });
         
         // Add components to center pane
@@ -172,6 +178,7 @@ public class UserInterfaceGraphical extends Application {
         }
         centerPane.getChildren().addAll(optionsText5, tfNumberOfTasks, optionsText6, choiceExerciseOrder);
         
+        
         // Add components to bottom pane
         bottomPane.getChildren().addAll(startButton, statusText);
         
@@ -181,14 +188,32 @@ public class UserInterfaceGraphical extends Application {
         exerciseOptionsPane.setBottom(bottomPane);
         exerciseOptionsScene = new Scene(exerciseOptionsPane, 800, 600);
         
+        // Exercise scene
+        // Implement the exercise scene here
+        
         // Configure and show primaryStage
         primaryStage.setTitle("Language Trainer");
         primaryStage.setScene(exerciseOptionsScene);
         primaryStage.show();
     }
     
-    public void startExercise(ArrayList<Task> tasks, Language questionLanguage, Language answerLanguage, ArrayList<WordType> types, ArrayList<WordTense> tenses, int numberOfTasks, ExerciseOrder order) {
-        System.out.println("Aloitus");
+    // Check if given String can be converted to integer
+    public boolean isInteger(String number) {
+        try {
+            Integer.valueOf(number);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+    
+    public boolean startExercise(ArrayList<Task> tasks, Language selectedQuestionLanguage, Language selectedAnswerLanguage, ArrayList<WordType> selectedTypes, ArrayList<WordTense> selectedTenses, int selectedNumberOfTasks, ExerciseOrder selectedOrder) {
+        
+        this.exercise = new Exercise(tasks, selectedQuestionLanguage, selectedAnswerLanguage, selectedTypes, selectedTenses, selectedNumberOfTasks, selectedOrder);
+        if (this.exercise != null) {
+            return true;
+        }
+        return false;
     }
 
     public static void main(String[] args) {
