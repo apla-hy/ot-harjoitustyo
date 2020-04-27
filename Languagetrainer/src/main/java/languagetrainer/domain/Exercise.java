@@ -1,16 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package languagetrainer.domain;
 
-/**
- *
- * @author lauri
- */
 import java.util.ArrayList;
 import java.util.Collections;
+
+/**
+ * This class creates and an exercise based on the given options  
+ */
 
 public class Exercise {
     private ArrayList<Task> tasks;
@@ -59,7 +55,12 @@ public class Exercise {
         }        
     }
     
-
+    /**
+     * This method returns the next task of the exercise
+     * 
+     * @return next task of the exercise or null if there is not a next task
+     */
+    
     public Task getNextTask() {
         if (this.currentTask > this.exerciseTasks.size()) {
             return null;        

@@ -1,11 +1,5 @@
 package languagetrainer.domain;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 import java.util.ArrayList;
 import languagetrainer.domain.*;
 import org.junit.Before;
@@ -13,9 +7,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
- * @author lauri
+ * Tests for the Task class
  */
+
 public class TaskTest {
     Task task1;
     

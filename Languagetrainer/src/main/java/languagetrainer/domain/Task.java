@@ -1,16 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package languagetrainer.domain;
 
-/**
- *
- * @author lauri
- */
 import java.util.ArrayList;
 
+/**
+ * This class defines an individual task 
+ */
 public class Task implements Comparable<Task> {
     private Language questionLanguage;
     private Language answerLanguage;
@@ -56,7 +51,5 @@ public class Task implements Comparable<Task> {
     public int compareTo(Task task) {
         return this.answer.get(0).compareTo(task.getAnswer().get(0));
     }
-
-
     
 }

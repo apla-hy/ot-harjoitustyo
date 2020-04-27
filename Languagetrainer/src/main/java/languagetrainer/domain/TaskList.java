@@ -1,18 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package languagetrainer.domain;
 
-/**
- *
- * @author lauri
- */
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.File;
 
+/**
+ * This class creates and stores all available tasks based on the given input files  
+ */
 public class TaskList {
     private ArrayList<Task> tasks;
 
@@ -22,7 +17,13 @@ public class TaskList {
             this.loadVerbsSpanish(dataFile);
         }
     }
-    
+   
+    /**
+     * This method reads an input file and creates tasks based on the data in the input file
+     * 
+     * @param sourceFile the input file
+     * 
+     */
     private void loadVerbsSpanish(String sourceFile) {
         
         try (Scanner fileReader = new Scanner(new File(sourceFile))) {
@@ -53,8 +54,11 @@ public class TaskList {
         return tasks;
     }
     
-    
-    // Return possible question languages based on available tasks
+    /**
+     * This method returns possible question languages based on the available tasks
+     *
+     * @return an ArrayList of the languages
+     */
     public ArrayList<Language> getQuestionLanguages() {
         ArrayList<Language> questionLanguages = new ArrayList<>();
         for (Task task: this.tasks) {
@@ -66,7 +70,11 @@ public class TaskList {
         return questionLanguages;
     }
     
-    // Return possible answer languages based on available tasks
+     /**
+     * This method returns the possible answer languages based on the available tasks
+     *
+     * @return an ArrayList of the languages
+     */
     public ArrayList<Language> getAnswerLanguages() {
         ArrayList<Language> answerLanguages = new ArrayList<>();
         for (Task task: this.tasks) {
@@ -78,7 +86,11 @@ public class TaskList {
         return answerLanguages;
     }
 
-    // Return possible word types based on available tasks
+    /**
+     * This method returns the possible word types based on the available tasks
+     *
+     * @return an ArrayList of the word types
+     */
     public ArrayList<WordType> getTypes() {
         ArrayList<WordType> types = new ArrayList<>();
         for (Task task: this.tasks) {
@@ -90,7 +102,11 @@ public class TaskList {
         return types;
     }
     
-    // Return possible word tenses based on available tasks
+    /**
+     * This method returns the possible word tenses based on the available tasks
+     *
+     * @return an ArrayList of the word tenses
+     */    
     public ArrayList<WordTense> getTenses() {
         ArrayList<WordTense> tenses = new ArrayList<>();
         for (Task task: this.tasks) {

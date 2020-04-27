@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package languagetrainer.domain;
 
 import java.util.ArrayList;
@@ -12,9 +8,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
- * @author lauri
+ * Tests for the Exercise class
  */
+
 public class ExerciseTest {
     
     Exercise exercise1;
@@ -81,6 +77,5 @@ public class ExerciseTest {
         Task task1 = this.exercise1.getNextTask();
         assertEquals("avata",task1.getQuestion());      
     }
-
     
 }

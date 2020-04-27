@@ -1,14 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package languagetrainer.ui;
 
-/**
- *
- * @author lauri
- */
 import languagetrainer.domain.*;
 import java.util.ArrayList;
 
@@ -31,6 +23,9 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Button;
 
+/**
+ * Class for the graphical user interface
+ */
 
 public class UserInterfaceGraphical extends Application {
     
@@ -301,10 +296,16 @@ public class UserInterfaceGraphical extends Application {
         primaryStage.setTitle("Language Trainer");
         primaryStage.setScene(exerciseOptionsScene);
         primaryStage.show();
+        
     }
     
-    // Check if given String can be converted to integer
-    public boolean isInteger(String number) {
+    /**
+     * The method checks if the given string can be converted to an integer
+     * @param number the string to be checked
+     * 
+     * @return true if the string can be converted to integer, false if not
+     */
+    private boolean isInteger(String number) {
         try {
             Integer.valueOf(number);
             return true;
@@ -313,12 +314,18 @@ public class UserInterfaceGraphical extends Application {
         }
     }
     
-    public void setQuestionText() {
+    /**
+     * The method updates the question text of the current task to the user interface
+     */
+    private void setQuestionText() {
         String currentQuestion = this.currentTask.getQuestion();
         this.questionText.setText("Mitä on " + currentQuestion + " espanjaksi?");
     }
     
-    public boolean startExercise(ArrayList<Task> tasks, Language selectedQuestionLanguage, Language selectedAnswerLanguage, ArrayList<WordType> selectedTypes, ArrayList<WordTense> selectedTenses, int selectedNumberOfTasks, ExerciseOrder selectedOrder) {
+    /**
+     * The method creates a new Exercise and assigns it to the class variable exercise
+     */
+    private boolean startExercise(ArrayList<Task> tasks, Language selectedQuestionLanguage, Language selectedAnswerLanguage, ArrayList<WordType> selectedTypes, ArrayList<WordTense> selectedTenses, int selectedNumberOfTasks, ExerciseOrder selectedOrder) {
         
         this.exercise = new Exercise(tasks, selectedQuestionLanguage, selectedAnswerLanguage, selectedTypes, selectedTenses, selectedNumberOfTasks, selectedOrder);
         if (this.exercise != null) {
@@ -327,6 +334,10 @@ public class UserInterfaceGraphical extends Application {
         return false;
     }
 
+    /**
+     * The methods starts the graphical user interface.
+     */
+    
     public static void main(String[] args) {
         launch(UserInterfaceGraphical.class);
     }
