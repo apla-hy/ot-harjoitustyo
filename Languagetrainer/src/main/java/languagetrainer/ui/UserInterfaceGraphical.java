@@ -257,10 +257,10 @@ public class UserInterfaceGraphical extends Application {
                 resultLabels.get(i).setText("");
             }
             this.currentTask = this.exercise.getNextTask();
+            for (int i = 0; i < answers.size(); i++) {
+                answers.get(i).setText("");
+            }
             if (this.currentTask != null) {
-                for (int i = 0; i < answers.size(); i++) {
-                    answers.get(i).setText("");
-                }
                 this.setQuestionText();
             } else {
                 this.questionText.setText("Ei enempää kysymyksiä.");
