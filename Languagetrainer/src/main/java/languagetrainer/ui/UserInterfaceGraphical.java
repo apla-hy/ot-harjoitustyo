@@ -34,7 +34,11 @@ import javafx.scene.control.Button;
 public class UserInterfaceGraphical extends Application {
     
     private Scene exerciseOptionsScene;
+    private Scene exerciseScene;
     private Exercise exercise;
+    private Task currentTask;
+    private String currentQuestion;
+    private Label questionText;
     
     @Override
     public void start(Stage primaryStage) {
@@ -84,13 +88,13 @@ public class UserInterfaceGraphical extends Application {
             options6.add(translations.getString(order.toString()));
         }
                 
-        // Exercise options scene
+        // *** Exercise options scene ***
         
         // Create components
-        BorderPane exerciseOptionsPane = new BorderPane();
-        VBox centerPane = new VBox(12);
-        HBox bottomPane = new HBox(2);
-        centerPane.setSpacing(10);
+        BorderPane optionsPane = new BorderPane();
+        VBox centerPaneOptions = new VBox(12);
+        HBox bottomPaneOptions = new HBox(2);
+        centerPaneOptions.setSpacing(10);
         
         // Main text
         Label mainText = new Label("Valitse asetukset uudelle harjoitukselle.");
@@ -161,35 +165,98 @@ public class UserInterfaceGraphical extends Application {
             if (this.isInteger(selection)) {
                 int selectedNumberOfTasks = Integer.valueOf(selection);
                 boolean result = this.startExercise(tasks, selectedQuestionLanguage, selectedAnswerLanguage, selectedTypes, selectedTenses, selectedNumberOfTasks, selectedOrder);
-                if (result) statusText.setText("Harjoitus luotu");
+                if (result) {
+                    this.currentTask = this.exercise.getNextTask();
+                    this.currentQuestion = this.currentTask.getQuestion();
+                    this.questionText.setText(this.currentQuestion);
+                    primaryStage.setScene(exerciseScene);
+                }
             } else {
                 statusText.setText("Virheellinen luku");
             }
         });
         
         // Add components to center pane
-        centerPane.getChildren().addAll(optionsText1, choiceQuestionLanguage, optionsText2, choiceAnswerLanguage, optionsText3);
+        centerPaneOptions.getChildren().addAll(optionsText1, choiceQuestionLanguage, optionsText2, choiceAnswerLanguage, optionsText3);
         for (CheckBox cb: typeBoxes) {
-            centerPane.getChildren().add(cb);
+            centerPaneOptions.getChildren().add(cb);
         }
-        centerPane.getChildren().add(optionsText4);
+        centerPaneOptions.getChildren().add(optionsText4);
         for (CheckBox cb: tenseBoxes) {
-            centerPane.getChildren().add(cb);
+            centerPaneOptions.getChildren().add(cb);
         }
-        centerPane.getChildren().addAll(optionsText5, tfNumberOfTasks, optionsText6, choiceExerciseOrder);
+        centerPaneOptions.getChildren().addAll(optionsText5, tfNumberOfTasks, optionsText6, choiceExerciseOrder);
         
         
         // Add components to bottom pane
-        bottomPane.getChildren().addAll(startButton, statusText);
+        bottomPaneOptions.getChildren().addAll(startButton, statusText);
         
         // Add components to excercise options main pane
-        exerciseOptionsPane.setTop(mainText);
-        exerciseOptionsPane.setCenter(centerPane);
-        exerciseOptionsPane.setBottom(bottomPane);
-        exerciseOptionsScene = new Scene(exerciseOptionsPane, 800, 600);
+        optionsPane.setTop(mainText);
+        optionsPane.setCenter(centerPaneOptions);
+        optionsPane.setBottom(bottomPaneOptions);
+        exerciseOptionsScene = new Scene(optionsPane, 800, 600);
         
-        // Exercise scene
-        // Implement the exercise scene here
+                
+        // *** Exercise scene ***
+        
+        // Create components
+        BorderPane exercisePane = new BorderPane();
+        HBox centerPaneExercise = new HBox(12);
+        VBox questionsPane = new VBox(12);
+        VBox answersPane = new VBox(12);
+        VBox resultsPane = new VBox(12);
+        HBox bottomPaneExercise = new HBox(2);
+        questionsPane.setSpacing(10);
+        answersPane.setSpacing(10);
+        
+        // Question text
+        questionText = new Label("");
+        
+        // Answer labels
+        ArrayList<Label> answerLabels = new ArrayList<>();
+        String[] answerTexts = {"Minä", "Sinä", "Hän", "Me", "Te", "He" };
+        for (String text: answerTexts) {
+            Label lb = new Label(text);
+            answerLabels.add(lb);
+        }
+        
+        // Answer text boxes
+        ArrayList<TextField> answers = new ArrayList<>();
+        for (String text: answerTexts) {
+            TextField tf = new TextField("");
+            answers.add(tf);
+        }
+        
+        // Result labels
+        ArrayList<Label> resultLabels = new ArrayList<>();
+        for (String text: answerTexts) {
+            Label lb = new Label("");
+            resultLabels.add(lb);
+        }
+        
+        
+        // Add components to center pane
+        for (Label lb: answerLabels) {
+            questionsPane.getChildren().add(lb);
+        }
+        for (TextField tf: answers) {
+            answersPane.getChildren().add(tf);
+        }
+        for (Label lb: resultLabels) {
+            resultsPane.getChildren().add(lb);
+        }
+        
+        centerPaneExercise.getChildren().addAll(questionsPane, answersPane, resultsPane);        
+        
+        // Add components to bottom pane
+        //bottomPaneOptions.getChildren().addAll(startButton, statusText);
+        
+        // Add components to excercise options main pane
+        exercisePane.setTop(questionText);
+        exercisePane.setCenter(centerPaneExercise);
+        exercisePane.setBottom(bottomPaneExercise);
+        exerciseScene = new Scene(exercisePane, 800, 600);
         
         // Configure and show primaryStage
         primaryStage.setTitle("Language Trainer");
