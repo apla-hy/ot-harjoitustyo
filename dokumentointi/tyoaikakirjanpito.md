@@ -17,4 +17,6 @@ päivä | aika | mitä tein
 21.4. | 2 | Testattu virtuaalityöpöydän avulla, että sovelluksen nykyinen versio toimii yliopiston ympäristössä. Jatkettu graafisen käyttöliittymän toteutusta.
 21.4. | 2 | Jatkettu graafisen käyttöliittymän toteutusta. Tehty 1. release. Muokattu tiedostoja readme.MD ja vaatimusmäärittely.
 21.4. | 1 | Tehty sekvenssikaavio. Testattu virtuaalityöpöydän avulla, että sovelluksen nykyinen versio toimii yliopiston ympäristössä. Päivitetty tuntikirjanpito.
-yht | 33 |
+27.4. | 1 | Jatkettu graafisen käyttöliittymän toteutusta.
+27.4. | 2 | Toteutettu valmiiksi graafisen käyttöliittymän perustoiminnallisuus. Päivitetty dokumentteja ja työaikakirjanpito.
+yht | 36 |
