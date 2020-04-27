@@ -24,6 +24,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.GridPane;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ChoiceBox;
@@ -37,7 +38,6 @@ public class UserInterfaceGraphical extends Application {
     private Scene exerciseScene;
     private Exercise exercise;
     private Task currentTask;
-    private String currentQuestion;
     private Label questionText;
     
     @Override
@@ -130,7 +130,7 @@ public class UserInterfaceGraphical extends Application {
         // Number of tasks
         Label optionsText5 = new Label("Tehtävien määrä");
         TextField tfNumberOfTasks = new TextField();
-        tfNumberOfTasks.setText("1");
+        tfNumberOfTasks.setText("5");
         
         // Order of tasks
         Label optionsText6 = new Label("Tehtävien järjestys");
@@ -167,13 +167,23 @@ public class UserInterfaceGraphical extends Application {
                 boolean result = this.startExercise(tasks, selectedQuestionLanguage, selectedAnswerLanguage, selectedTypes, selectedTenses, selectedNumberOfTasks, selectedOrder);
                 if (result) {
                     this.currentTask = this.exercise.getNextTask();
-                    this.currentQuestion = this.currentTask.getQuestion();
-                    this.questionText.setText(this.currentQuestion);
-                    primaryStage.setScene(exerciseScene);
+                    if (this.currentTask != null) {
+                        statusText.setText("");
+                        this.setQuestionText();
+                        primaryStage.setScene(exerciseScene);
+                    } else {
+                        statusText.setText("Valinnoilla ei löydy yhtään tehtävää.");
+                    }
                 }
             } else {
                 statusText.setText("Virheellinen luku");
             }
+        });
+        
+        // Button exit
+        Button exitButton = new Button("Lopeta");
+        exitButton.setOnAction((event) -> {
+            System.exit(0);
         });
         
         // Add components to center pane
@@ -189,33 +199,27 @@ public class UserInterfaceGraphical extends Application {
         
         
         // Add components to bottom pane
-        bottomPaneOptions.getChildren().addAll(startButton, statusText);
+        bottomPaneOptions.getChildren().addAll(startButton, exitButton, statusText);
         
         // Add components to excercise options main pane
         optionsPane.setTop(mainText);
         optionsPane.setCenter(centerPaneOptions);
         optionsPane.setBottom(bottomPaneOptions);
         exerciseOptionsScene = new Scene(optionsPane, 800, 600);
-        
                 
         // *** Exercise scene ***
         
         // Create components
         BorderPane exercisePane = new BorderPane();
-        HBox centerPaneExercise = new HBox(12);
-        VBox questionsPane = new VBox(12);
-        VBox answersPane = new VBox(12);
-        VBox resultsPane = new VBox(12);
+        GridPane centerPaneExercise = new GridPane();
         HBox bottomPaneExercise = new HBox(2);
-        questionsPane.setSpacing(10);
-        answersPane.setSpacing(10);
         
         // Question text
         questionText = new Label("");
         
         // Answer labels
         ArrayList<Label> answerLabels = new ArrayList<>();
-        String[] answerTexts = {"Minä", "Sinä", "Hän", "Me", "Te", "He" };
+        String[] answerTexts = {"Perusmuoto", "Minä", "Sinä", "Hän", "Me", "Te", "He" };
         for (String text: answerTexts) {
             Label lb = new Label(text);
             answerLabels.add(lb);
@@ -235,22 +239,57 @@ public class UserInterfaceGraphical extends Application {
             resultLabels.add(lb);
         }
         
+        // Button show answers
+        Button showAnswersButton = new Button("Näytä vastaukset");
+        showAnswersButton.setOnAction((event) -> {
+            if (this.currentTask != null) {
+                for (int i = 0; i < answers.size(); i++) {
+                    resultLabels.get(i).setText(this.currentTask.getAnswer().get(i));
+                }
+            }
+            
+        });
+        
+        // Button next task
+        Button nextTaskButton = new Button("Seuraava tehtävä");
+        nextTaskButton.setOnAction((event) -> {
+            for (int i = 0; i < answers.size(); i++) {
+                resultLabels.get(i).setText("");
+            }
+            this.currentTask = this.exercise.getNextTask();
+            if (this.currentTask != null) {
+                for (int i = 0; i < answers.size(); i++) {
+                    answers.get(i).setText("");
+                }
+                this.setQuestionText();
+            } else {
+                this.questionText.setText("Ei enempää kysymyksiä.");
+            }
+        });
+        
+        // Button stop
+        Button stopButton = new Button("Lopeta harjoitus");
+        stopButton.setOnAction((event) -> {
+            for (int i = 0; i < answers.size(); i++) {
+                answers.get(i).setText("");
+                resultLabels.get(i).setText("");
+            }
+            primaryStage.setScene(exerciseOptionsScene);
+        });
         
         // Add components to center pane
-        for (Label lb: answerLabels) {
-            questionsPane.getChildren().add(lb);
+        for (int i = 0; i < answerLabels.size(); i++) {
+            centerPaneExercise.add(answerLabels.get(i), 1, i+1);
         }
-        for (TextField tf: answers) {
-            answersPane.getChildren().add(tf);
+        for (int i = 0; i < answers.size(); i++) {
+            centerPaneExercise.add(answers.get(i), 2, i+1);
         }
-        for (Label lb: resultLabels) {
-            resultsPane.getChildren().add(lb);
+        for (int i = 0; i < resultLabels.size(); i++) {
+            centerPaneExercise.add(resultLabels.get(i), 3, i+1);
         }
-        
-        centerPaneExercise.getChildren().addAll(questionsPane, answersPane, resultsPane);        
         
         // Add components to bottom pane
-        //bottomPaneOptions.getChildren().addAll(startButton, statusText);
+        bottomPaneExercise.getChildren().addAll(showAnswersButton, nextTaskButton, stopButton);
         
         // Add components to excercise options main pane
         exercisePane.setTop(questionText);
@@ -272,6 +311,11 @@ public class UserInterfaceGraphical extends Application {
         } catch (Exception e) {
             return false;
         }
+    }
+    
+    public void setQuestionText() {
+        String currentQuestion = this.currentTask.getQuestion();
+        this.questionText.setText("Mitä on " + currentQuestion + " espanjaksi?");
     }
     
     public boolean startExercise(ArrayList<Task> tasks, Language selectedQuestionLanguage, Language selectedAnswerLanguage, ArrayList<WordType> selectedTypes, ArrayList<WordTense> selectedTenses, int selectedNumberOfTasks, ExerciseOrder selectedOrder) {
