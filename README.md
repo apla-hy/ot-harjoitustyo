@@ -1,12 +1,14 @@
 # LanguageTrainer
 
-Sovelluksen avulla suomenkielentaitoinen henkilö voi opetella espanjan sanastoa. Nykyisellä versiolla voi harjoitella preesensin verbejä suomesta espanjaksi tekstikäyttöliittymällä. Graafisen käyttöliittymän toteutus on aloitettu mutta se ei ole vielä valmis.
+Sovelluksen avulla suomenkielentaitoinen henkilö voi opetella espanjan sanastoa. Nykyisellä versiolla voi harjoitella preesensin verbejä suomesta espanjaksi graafisella käyttöliitymällä.
 
 Sovellus tarvitsee toimiakseen tiedoston *espanjanverbilista.csv* sovelluksen juurihakemistoon.
 
 Osa testeistä tarvitsee toimiakseen tiedoston *taskListForTestingOptions.csv* sovelluksen juurihakemistoon.
 
 ## Dokumentaatio
+
+[Käyttöohje](https://github.com/apla-hy/ot-harjoitustyo/blob/master/dokumentointi/kayttoohje.md)
 
 [Vaatimusmäärittely](https://github.com/apla-hy/ot-harjoitustyo/blob/master/dokumentointi/maarittelydokumentti.md)
 
