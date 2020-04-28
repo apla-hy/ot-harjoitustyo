@@ -18,7 +18,9 @@ Osa testeistä tarvitsee toimiakseen tiedoston *taskListForTestingOptions.csv* s
 
 ## Releaset
 
-[Viikko 5](https://github.com/apla-hy/ot-harjoitustyo/releases)
+[Viikko 5](https://github.com/apla-hy/ot-harjoitustyo/releases/tag/viikko5)
+
+[Viikko 6](https://github.com/apla-hy/ot-harjoitustyo/releases/tag/viikko6)
 
 ## Komentorivitoiminnot
 
