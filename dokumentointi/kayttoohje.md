@@ -7,7 +7,7 @@ Lataa tiedostot languagetrainer.jar ja espanjanverbilista.csv.
 Ohjelma käynnistetään komennolla
 
 ```
-java -jar todoapp.jar
+java -jar languagetrainer.jar
 ```
 
 ## Ohjelman käyttäminen
