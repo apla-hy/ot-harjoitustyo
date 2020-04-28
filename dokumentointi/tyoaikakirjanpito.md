@@ -19,4 +19,6 @@ päivä | aika | mitä tein
 21.4. | 1 | Tehty sekvenssikaavio. Testattu virtuaalityöpöydän avulla, että sovelluksen nykyinen versio toimii yliopiston ympäristössä. Päivitetty tuntikirjanpito.
 27.4. | 1 | Jatkettu graafisen käyttöliittymän toteutusta.
 27.4. | 2 | Toteutettu valmiiksi graafisen käyttöliittymän perustoiminnallisuus. Päivitetty dokumentteja ja työaikakirjanpito.
-yht | 36 |
+27.4. | 2 | Kirjoitettu JavaDoc:eja. Komento ’mvn javadoc:javadoc’ ei toiminut. Selvitetty ongelmaa ja ratkaistu se.
+28.4. | 3 | Kirjoitettu uusia dokumentteja. Laajennettu olemassa olleita dokumentteja. Tehty pieniä korjauksia. Tehty uusi release.
+yht | 41 |
