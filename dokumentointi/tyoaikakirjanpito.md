@@ -20,5 +20,5 @@ päivä | aika | mitä tein
 27.4. | 1 | Jatkettu graafisen käyttöliittymän toteutusta.
 27.4. | 2 | Toteutettu valmiiksi graafisen käyttöliittymän perustoiminnallisuus. Päivitetty dokumentteja ja työaikakirjanpito.
 27.4. | 2 | Kirjoitettu JavaDoc:eja. Komento ’mvn javadoc:javadoc’ ei toiminut. Selvitetty ongelmaa ja ratkaistu se.
-28.4. | 3 | Kirjoitettu uusia dokumentteja. Laajennettu olemassa olleita dokumentteja. Tehty pieniä korjauksia. Tehty uusi release.
+28.4. | 3 | Kirjoitettu uusia dokumentteja. Laajennettu olemassa olleita dokumentteja. Tehty pieniä korjauksia. Tehty uusi release. Testattu virtuaalityöpöydän avulla, että sovelluksen nykyinen versio toimii yliopiston ympäristössä.
 yht | 41 |
