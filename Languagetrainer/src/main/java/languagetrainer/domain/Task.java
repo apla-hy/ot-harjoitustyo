@@ -13,14 +13,16 @@ public class Task implements Comparable<Task> {
     private WordTense tense;
     private String question;
     private ArrayList<String> answer;
+    private String notes;
 
-    public Task(Language questionLanguage, Language answerLanguage, WordType type, WordTense tense, String question, ArrayList<String> answer) {
+    public Task(Language questionLanguage, Language answerLanguage, WordType type, WordTense tense, String question, ArrayList<String> answer, String notes) {
         this.questionLanguage = questionLanguage;
         this.answerLanguage = answerLanguage;
         this.type = type;
         this.tense = tense;
         this.question = question;
         this.answer = answer;
+        this.notes = notes;
     }
 
     public String getQuestion() {
@@ -29,6 +31,10 @@ public class Task implements Comparable<Task> {
 
     public ArrayList<String> getAnswer() {
         return answer;
+    }
+    
+    public String getNotes() {
+        return notes;
     }
 
     public Language getQuestionLanguage() {

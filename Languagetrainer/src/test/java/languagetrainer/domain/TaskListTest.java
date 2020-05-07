@@ -21,7 +21,7 @@ public class TaskListTest {
     @Before
     public void setUp() {
         ArrayList<String> files = new ArrayList<>();
-        files.add("espanjanverbilista.csv");
+        files.add("vocabulary.csv");
         taskList1 = new TaskList(files);
         files.add("taskListForTestingOptions.csv");
         taskList2 = new TaskList(files);

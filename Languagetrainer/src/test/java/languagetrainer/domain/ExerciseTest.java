@@ -22,7 +22,7 @@ public class ExerciseTest {
     @Before
     public void setUp() {
         ArrayList<String> files = new ArrayList<>();
-        files.add("espanjanverbilista.csv");
+        files.add("vocabulary.csv");
         TaskList taskList1 = new TaskList(files);
         ArrayList<Task> tasks = taskList1.getTasks();
         ArrayList<WordType> types = new ArrayList<>();

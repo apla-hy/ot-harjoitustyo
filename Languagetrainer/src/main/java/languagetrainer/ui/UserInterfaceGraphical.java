@@ -7,6 +7,9 @@ import java.util.ArrayList;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
+import java.util.Properties;
+import java.io.FileInputStream;
+
 import javafx.application.Application;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -40,8 +43,19 @@ public class UserInterfaceGraphical extends Application {
         
         // Create task list
         ArrayList<String> files = new ArrayList<>();
-        files.add("espanjanverbilista.csv");
-        //files.add("taskListForTestingOptions.csv");
+        String dataFile = "";
+        try {
+            Properties properties = new Properties();
+            properties.load(new FileInputStream("config.properties"));
+            dataFile = properties.getProperty("dataFile");
+        } catch (Exception e) {
+            //e.printStackTrace();
+            System.out.println(e);
+        }
+        String[] parts = dataFile.split(",");
+        for (String part: parts) {
+            files.add(part);
+        }
         TaskList taskList = new TaskList(files);
         ArrayList<Task> tasks = taskList.getTasks();
         
@@ -234,6 +248,9 @@ public class UserInterfaceGraphical extends Application {
             resultLabels.add(lb);
         }
         
+        // Notes label
+        Label notesLabel = new Label("");
+        
         // Button show answers
         Button showAnswersButton = new Button("Näytä vastaukset");
         showAnswersButton.setOnAction((event) -> {
@@ -241,8 +258,8 @@ public class UserInterfaceGraphical extends Application {
                 for (int i = 0; i < answers.size(); i++) {
                     resultLabels.get(i).setText(this.currentTask.getAnswer().get(i));
                 }
+                notesLabel.setText(this.currentTask.getNotes());
             }
-            
         });
         
         // Button next task
@@ -251,6 +268,7 @@ public class UserInterfaceGraphical extends Application {
             for (int i = 0; i < answers.size(); i++) {
                 resultLabels.get(i).setText("");
             }
+            notesLabel.setText("");
             this.currentTask = this.exercise.getNextTask();
             for (int i = 0; i < answers.size(); i++) {
                 answers.get(i).setText("");
@@ -269,6 +287,7 @@ public class UserInterfaceGraphical extends Application {
                 answers.get(i).setText("");
                 resultLabels.get(i).setText("");
             }
+            notesLabel.setText("");
             primaryStage.setScene(exerciseOptionsScene);
         });
         
@@ -282,6 +301,7 @@ public class UserInterfaceGraphical extends Application {
         for (int i = 0; i < resultLabels.size(); i++) {
             centerPaneExercise.add(resultLabels.get(i), 3, i+1);
         }
+        centerPaneExercise.add(notesLabel,4,1);
         
         // Add components to bottom pane
         bottomPaneExercise.getChildren().addAll(showAnswersButton, nextTaskButton, stopButton);

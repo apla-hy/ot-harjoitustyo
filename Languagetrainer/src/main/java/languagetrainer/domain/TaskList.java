@@ -14,7 +14,7 @@ public class TaskList {
     public TaskList(ArrayList<String> dataFiles) {
         this.tasks = new ArrayList<>();
         for (String dataFile: dataFiles) {
-            this.loadVerbsSpanish(dataFile);
+            this.loadVocabulary(dataFile);
         }
     }
    
@@ -24,29 +24,28 @@ public class TaskList {
      * @param sourceFile the input file
      * 
      */
-    private void loadVerbsSpanish(String sourceFile) {
+    private void loadVocabulary(String sourceFile) {
         
         try (Scanner fileReader = new Scanner(new File(sourceFile))) {
             
-            // Read header row
-            String[] parts = fileReader.nextLine().split(",");
-            Language questionLanguage = Language.valueOf(parts[0].trim());
-            Language answerLanguage = Language.valueOf(parts[1].trim());
-            WordType type = WordType.valueOf(parts[2].trim());
-            WordTense tense = WordTense.valueOf(parts[3].trim());
-            
             // Read data rows
             while (fileReader.hasNextLine()) {
-                parts = fileReader.nextLine().split(",");
-                String question = parts[7].trim();
+                String[] parts = fileReader.nextLine().split(",");
+                Language questionLanguage = Language.valueOf(parts[0].trim());
+                Language answerLanguage = Language.valueOf(parts[1].trim());
+                WordType type = WordType.valueOf(parts[2].trim());
+                WordTense tense = WordTense.valueOf(parts[3].trim());
+                String question = parts[11].trim();
                 ArrayList<String> answers = new ArrayList<>();
                 for (int i = 0; i < 7; i++) {
-                    answers.add(parts[i].trim());
+                    answers.add(parts[i+4].trim());
                 }
-                this.tasks.add(new Task(questionLanguage, answerLanguage, type, tense, question, answers));
+                String notes = parts[12].trim();
+                this.tasks.add(new Task(questionLanguage, answerLanguage, type, tense, question, answers, notes));
             }
         } catch (Exception e) {
-            System.out.println("Error: " + e.getMessage());
+            //e.printStackTrace();
+            System.out.println(e);
         }        
     }
 
