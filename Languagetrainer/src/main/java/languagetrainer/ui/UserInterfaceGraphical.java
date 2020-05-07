@@ -42,7 +42,6 @@ public class UserInterfaceGraphical extends Application {
     public void start(Stage primaryStage) {
         
         // Create task list
-        ArrayList<String> files = new ArrayList<>();
         String dataFile = "";
         try {
             Properties properties = new Properties();
@@ -52,11 +51,7 @@ public class UserInterfaceGraphical extends Application {
             //e.printStackTrace();
             System.out.println(e);
         }
-        String[] parts = dataFile.split(",");
-        for (String part: parts) {
-            files.add(part);
-        }
-        TaskList taskList = new TaskList(files);
+        TaskList taskList = new TaskList(dataFile);
         ArrayList<Task> tasks = taskList.getTasks();
         
         // Find out / specify what options are available

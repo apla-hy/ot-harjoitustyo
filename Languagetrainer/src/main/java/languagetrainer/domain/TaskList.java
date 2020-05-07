@@ -6,27 +6,24 @@ import java.util.Scanner;
 import java.io.File;
 
 /**
- * This class creates and stores all available tasks based on the given input files  
+ * This class creates tasks based on the given input file and stores the tasks in a list   
  */
 public class TaskList {
     private ArrayList<Task> tasks;
+    private String dataFile;
 
-    public TaskList(ArrayList<String> dataFiles) {
+    public TaskList(String dataFile) {
+        this.dataFile = dataFile;
         this.tasks = new ArrayList<>();
-        for (String dataFile: dataFiles) {
-            this.loadVocabulary(dataFile);
-        }
+        this.load();
     }
    
     /**
-     * This method reads an input file and creates tasks based on the data in the input file
-     * 
-     * @param sourceFile the input file
-     * 
+     * This method reads the input file and creates tasks based on the data in the input file
      */
-    private void loadVocabulary(String sourceFile) {
+    private void load() {
         
-        try (Scanner fileReader = new Scanner(new File(sourceFile))) {
+        try (Scanner fileReader = new Scanner(new File(this.dataFile))) {
             
             // Read data rows
             while (fileReader.hasNextLine()) {
@@ -47,6 +44,13 @@ public class TaskList {
             //e.printStackTrace();
             System.out.println(e);
         }        
+    }
+    
+    public boolean save() {
+        
+        // Not implemented yet
+        
+        return false;
     }
 
     public ArrayList<Task> getTasks() {

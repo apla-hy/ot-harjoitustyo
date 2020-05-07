@@ -20,11 +20,10 @@ public class TaskListTest {
     
     @Before
     public void setUp() {
-        ArrayList<String> files = new ArrayList<>();
-        files.add("vocabulary.csv");
-        taskList1 = new TaskList(files);
-        files.add("taskListForTestingOptions.csv");
-        taskList2 = new TaskList(files);
+        String dataFile1 = "vocabulary.csv";
+        taskList1 = new TaskList(dataFile1);
+        String dataFile2 = "vocabularyForTestingOptions.csv";
+        taskList2 = new TaskList(dataFile2);
     }
     
     @Test

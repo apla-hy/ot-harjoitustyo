@@ -21,9 +21,8 @@ public class ExerciseTest {
     
     @Before
     public void setUp() {
-        ArrayList<String> files = new ArrayList<>();
-        files.add("vocabulary.csv");
-        TaskList taskList1 = new TaskList(files);
+        String dataFile = "vocabulary.csv";
+        TaskList taskList1 = new TaskList(dataFile);
         ArrayList<Task> tasks = taskList1.getTasks();
         ArrayList<WordType> types = new ArrayList<>();
         types.add(WordType.VERB);
