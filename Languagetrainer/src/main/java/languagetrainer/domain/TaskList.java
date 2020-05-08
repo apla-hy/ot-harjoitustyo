@@ -7,7 +7,7 @@ import java.io.File;
 import java.io.FileWriter;
 
 /**
- * This class creates tasks based on the given input file and stores the tasks in a list   
+ * This class creates tasks based on the given data file and stores the tasks in a list   
  */
 public class TaskList {
     private ArrayList<Task> tasks;
@@ -16,13 +16,16 @@ public class TaskList {
     public TaskList(String dataFile) {
         this.dataFile = dataFile;
         this.tasks = new ArrayList<>();
-        this.load();
+        boolean result = this.load();
+        if (!result) throw new IllegalArgumentException("Tiedoston " + this.dataFile + " lukeminen ei onnistunut");
     }
    
     /**
-     * This method reads the input file and creates tasks based on the data in the input file
+     * This method reads the data file and creates tasks based on the data in the file
+     * 
+     * @return true if the reading of the file was successful, false if not 
      */
-    private void load() {
+    private boolean load() {
         
         try (Scanner fileReader = new Scanner(new File(this.dataFile))) {
             
@@ -45,12 +48,17 @@ public class TaskList {
                 }
                 this.tasks.add(new Task(questionLanguage, answerLanguage, type, tense, question, answers, notes, irregular));
             }
+            return true;
         } catch (Exception e) {
-            //e.printStackTrace();
-            System.out.println(e);
+            return false;
         }        
     }
     
+     /**
+     * This method saves all tasks to the data file
+     * 
+     * @return true if the saving of the file was successful, false if not 
+     */
     public boolean save() {
         
         // Save task list to file
@@ -70,8 +78,6 @@ public class TaskList {
                 writer.write(dataRow + "\n");
             }
         } catch (Exception e) {
-            //e.printStackTrace();
-            System.out.println(e);
             return false;
         }
         return true;

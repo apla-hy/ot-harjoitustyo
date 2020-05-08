@@ -34,6 +34,7 @@ public class UserInterfaceGraphical extends Application {
     
     private Scene exerciseOptionsScene;
     private Scene exerciseScene;
+    private TaskList taskList;
     private Exercise exercise;
     private Task currentTask;
     private Label questionText;
@@ -48,10 +49,15 @@ public class UserInterfaceGraphical extends Application {
             properties.load(new FileInputStream("config.properties"));
             dataFile = properties.getProperty("dataFile");
         } catch (Exception e) {
-            //e.printStackTrace();
-            System.out.println(e);
+            System.out.println("Tiedoston config.properties lukeminen ei onnistunut");
+            System.exit(0);
         }
-        TaskList taskList = new TaskList(dataFile);
+        try {
+            this.taskList = new TaskList(dataFile);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            System.exit(0);
+        }
         ArrayList<Task> tasks = taskList.getTasks();
         
         // Find out / specify what options are available
@@ -140,10 +146,10 @@ public class UserInterfaceGraphical extends Application {
         Label optionsText6 = new Label("Tehtävien järjestys");
         ChoiceBox<String> choiceExerciseOrder = new ChoiceBox<String>(FXCollections.observableArrayList(options6));
         choiceExerciseOrder.setValue(options6.get(0));
-        
-        // Status label
+
+        // Label for status messages
         Label statusText = new Label("");
-        
+           
         // Button start new exercise
         Button startButton = new Button("Aloita uusi harjoitus");
         startButton.setOnAction((event) -> {
@@ -248,6 +254,9 @@ public class UserInterfaceGraphical extends Application {
         Label notesLabel = new Label("Muistiinpanot ja esimerkit:");
         TextField notesTextField = new TextField("");
         
+        // Label for status messages
+        Label statusTextExercise = new Label("");
+
         // Button show answers
         Button showAnswersButton = new Button("Näytä vastaukset");
         showAnswersButton.setOnAction((event) -> {
@@ -256,6 +265,7 @@ public class UserInterfaceGraphical extends Application {
                     resultLabels.get(i).setText(this.currentTask.getAnswer().get(i));
                 }
                 notesTextField.setText(this.currentTask.getNotes());
+                statusTextExercise.setText("");
             }
         });
         
@@ -266,6 +276,7 @@ public class UserInterfaceGraphical extends Application {
                 resultLabels.get(i).setText("");
             }
             notesTextField.setText("");
+            statusTextExercise.setText("");
             this.currentTask = this.exercise.getNextTask();
             for (int i = 0; i < answers.size(); i++) {
                 answers.get(i).setText("");
@@ -273,7 +284,7 @@ public class UserInterfaceGraphical extends Application {
             if (this.currentTask != null) {
                 this.setQuestionText();
             } else {
-                this.questionText.setText("Ei enempää kysymyksiä.");
+                this.questionText.setText("Olet vastannut kaikkiin kysymyksiin. Palaa päävalikkoon painamalla Lopeta harjoitus -nappia.");
             }
         });
         
@@ -285,18 +296,28 @@ public class UserInterfaceGraphical extends Application {
                 resultLabels.get(i).setText("");
             }
             notesTextField.setText("");
+            statusTextExercise.setText("");
             primaryStage.setScene(exerciseOptionsScene);
         });
                 
         // Button save notes
         Button saveNotesButton = new Button("Tallenna muistiinpanot");
         saveNotesButton.setOnAction((event) -> {
-            String notes = notesTextField.getText();
-            // Check that notes don't contain ";" needs to be implemented
-            this.currentTask.setNotes(notes);
-            taskList.save();
+            if (this.currentTask != null) {
+                String notes = notesTextField.getText();
+                // Check that notes don't contain ";" since it is the delimiter in the file format
+                if (notes.contains(";")) {
+                    statusTextExercise.setText("Muistiinpanoissa ei saa olla puolipistettä");
+                } else {
+                    this.currentTask.setNotes(notes);
+                    taskList.save();
+                    statusTextExercise.setText("Tallennettu");
+                }
+            } else {
+                statusTextExercise.setText("Tallennus ei onnistunut");
+            }
         });
-        
+                
         // Add components to center grid pane
         for (int i = 0; i < answerLabels.size(); i++) {
             centerGridPaneExercise.add(answerLabels.get(i), 1, i+1);
@@ -312,7 +333,7 @@ public class UserInterfaceGraphical extends Application {
         centerPaneExercise.getChildren().addAll(centerGridPaneExercise, notesLabel, notesTextField, saveNotesButton);
         
         // Add components to bottom pane
-        bottomPaneExercise.getChildren().addAll(showAnswersButton, nextTaskButton, stopButton);
+        bottomPaneExercise.getChildren().addAll(showAnswersButton, nextTaskButton, stopButton, statusTextExercise);
         
         // Add components to excercise main pane
         exercisePane.setTop(questionText);
