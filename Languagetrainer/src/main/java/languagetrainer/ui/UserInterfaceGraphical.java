@@ -25,6 +25,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Button;
+import javafx.geometry.*;
 
 /**
  * Class for the graphical user interface
@@ -97,11 +98,17 @@ public class UserInterfaceGraphical extends Application {
         for (ExerciseOrder order: orders) {
             options6.add(translations.getString(order.toString()));
         }
-                
+        // Start characters ie. all characters from a to z
+        ArrayList<String> options7 = new ArrayList<>();
+        for (int i = 97; i < 123; i++) {
+            options7.add(Character.toString ((char) i));
+        }
+    
         // *** Exercise options scene ***
         
         // Create components
         BorderPane optionsPane = new BorderPane();
+        GridPane topPaneOptions = new GridPane();
         VBox centerPaneOptions = new VBox(12);
         HBox bottomPaneOptions = new HBox(2);
         centerPaneOptions.setSpacing(10);
@@ -146,6 +153,11 @@ public class UserInterfaceGraphical extends Application {
         Label optionsText6 = new Label("Tehtävien järjestys");
         ChoiceBox<String> choiceExerciseOrder = new ChoiceBox<String>(FXCollections.observableArrayList(options6));
         choiceExerciseOrder.setValue(options6.get(0));
+        
+        // Start character
+        Label optionsText7 = new Label("Aloituskirjain");
+        ChoiceBox<String> choiceExerciseStartChar = new ChoiceBox<String>(FXCollections.observableArrayList(options7));
+        choiceExerciseStartChar.setValue(options7.get(0));
 
         // Label for status messages
         Label statusText = new Label("");
@@ -174,7 +186,7 @@ public class UserInterfaceGraphical extends Application {
             selection = tfNumberOfTasks.getText();
             if (this.isInteger(selection)) {
                 int selectedNumberOfTasks = Integer.valueOf(selection);
-                boolean result = this.startExercise(tasks, selectedQuestionLanguage, selectedAnswerLanguage, selectedTypes, selectedTenses, selectedNumberOfTasks, selectedOrder);
+                boolean result = this.startExercise(tasks, selectedQuestionLanguage, selectedAnswerLanguage, selectedTypes, selectedTenses, selectedNumberOfTasks, selectedOrder, choiceExerciseStartChar.getValue());
                 if (result) {
                     this.currentTask = this.exercise.getNextTask();
                     if (this.currentTask != null) {
@@ -196,6 +208,9 @@ public class UserInterfaceGraphical extends Application {
             System.exit(0);
         });
         
+        // Add components to top pane
+        topPaneOptions.add(mainText, 1, 1);
+        
         // Add components to center pane
         centerPaneOptions.getChildren().addAll(optionsText1, choiceQuestionLanguage, optionsText2, choiceAnswerLanguage, optionsText3);
         for (CheckBox cb: typeBoxes) {
@@ -205,14 +220,14 @@ public class UserInterfaceGraphical extends Application {
         for (CheckBox cb: tenseBoxes) {
             centerPaneOptions.getChildren().add(cb);
         }
-        centerPaneOptions.getChildren().addAll(optionsText5, tfNumberOfTasks, optionsText6, choiceExerciseOrder);
+        centerPaneOptions.getChildren().addAll(optionsText5, tfNumberOfTasks, optionsText6, choiceExerciseOrder, optionsText7, choiceExerciseStartChar);
         
         
         // Add components to bottom pane
         bottomPaneOptions.getChildren().addAll(startButton, exitButton, statusText);
         
         // Add components to excercise options main pane
-        optionsPane.setTop(mainText);
+        optionsPane.setTop(topPaneOptions);
         optionsPane.setCenter(centerPaneOptions);
         optionsPane.setBottom(bottomPaneOptions);
         exerciseOptionsScene = new Scene(optionsPane, 800, 600);
@@ -374,9 +389,9 @@ public class UserInterfaceGraphical extends Application {
     /**
      * The method creates a new Exercise and assigns it to the class variable exercise
      */
-    private boolean startExercise(ArrayList<Task> tasks, Language selectedQuestionLanguage, Language selectedAnswerLanguage, ArrayList<WordType> selectedTypes, ArrayList<WordTense> selectedTenses, int selectedNumberOfTasks, ExerciseOrder selectedOrder) {
+    private boolean startExercise(ArrayList<Task> tasks, Language selectedQuestionLanguage, Language selectedAnswerLanguage, ArrayList<WordType> selectedTypes, ArrayList<WordTense> selectedTenses, int selectedNumberOfTasks, ExerciseOrder selectedOrder, String startChar) {
         
-        this.exercise = new Exercise(tasks, selectedQuestionLanguage, selectedAnswerLanguage, selectedTypes, selectedTenses, selectedNumberOfTasks, selectedOrder);
+        this.exercise = new Exercise(tasks, selectedQuestionLanguage, selectedAnswerLanguage, selectedTypes, selectedTenses, selectedNumberOfTasks, selectedOrder, startChar);
         if (this.exercise != null) {
             return true;
         }

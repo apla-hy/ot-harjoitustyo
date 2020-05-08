@@ -28,7 +28,7 @@ public class ExerciseTest {
         types.add(WordType.VERB);
         ArrayList<WordTense> tenses = new ArrayList<>();
         tenses.add(WordTense.PRESENT);
-        this.exercise1 = new Exercise(tasks, Language.FINNISH, Language.SPANISH, types, tenses, 2, ExerciseOrder.ASCENDING);
+        this.exercise1 = new Exercise(tasks, Language.FINNISH, Language.SPANISH, types, tenses, 2, ExerciseOrder.ASCENDING, "a");
     }
     
     

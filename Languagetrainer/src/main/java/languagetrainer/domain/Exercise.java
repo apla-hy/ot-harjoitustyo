@@ -16,10 +16,11 @@ public class Exercise {
     private ArrayList<WordTense> tenses;
     private int numberOfTasks;
     private ExerciseOrder order;
+    private String startChar;
     private ArrayList<Task> exerciseTasks;
     private int currentTask;
 
-    public Exercise(ArrayList<Task> tasks, Language questionLanguage, Language answerLanguage, ArrayList<WordType> types, ArrayList<WordTense> tenses, int numberOfTasks, ExerciseOrder order) {
+    public Exercise(ArrayList<Task> tasks, Language questionLanguage, Language answerLanguage, ArrayList<WordType> types, ArrayList<WordTense> tenses, int numberOfTasks, ExerciseOrder order, String startChar) {
         this.tasks = tasks;
         this.questionLanguage = questionLanguage;
         this.answerLanguage = answerLanguage;
@@ -27,12 +28,14 @@ public class Exercise {
         this.tenses = tenses;
         this.numberOfTasks = numberOfTasks;
         this.order = order;
+        this.startChar = startChar;
         this.exerciseTasks = new ArrayList<>();
         this.currentTask = 1;
         this.createExercise();
     }
     
     private void createExercise() {
+        
         // Apply the selected order for tasks
         if (this.order == ExerciseOrder.ASCENDING) {
             Collections.sort(tasks);
@@ -42,14 +45,15 @@ public class Exercise {
             Collections.shuffle(tasks);
         }
         
-        // Add tasks for the exercise based on options
+        // Add tasks for the exercise based on the options
         for (Task task: tasks) {
-            if (task.getQuestionLanguage().equals(this.questionLanguage) &&
+            if (this.exerciseTasks.size() < this.numberOfTasks) {
+                if (task.getQuestionLanguage().equals(this.questionLanguage) &&
                     task.getAnswerLanguage().equals(this.answerLanguage) &&
                     this.types.contains(task.getType()) &&
-                    this.tenses.contains(task.getTense())) {
-                if (this.exerciseTasks.size() < this.numberOfTasks) {
-                    this.exerciseTasks.add(task);
+                    this.tenses.contains(task.getTense()) &&
+                    task.getAnswer().get(0).compareTo(this.startChar) > 0) {
+                        this.exerciseTasks.add(task);
                 }
             }
         }        
