@@ -25,7 +25,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Button;
-import javafx.geometry.*;
 
 /**
  * Class for the graphical user interface
@@ -208,11 +207,8 @@ public class UserInterfaceGraphical extends Application {
             System.exit(0);
         });
         
-        // Add components to top pane
-        topPaneOptions.add(mainText, 1, 1);
-        
         // Add components to center pane
-        centerPaneOptions.getChildren().addAll(optionsText1, choiceQuestionLanguage, optionsText2, choiceAnswerLanguage, optionsText3);
+        centerPaneOptions.getChildren().addAll(mainText, optionsText1, choiceQuestionLanguage, optionsText2, choiceAnswerLanguage, optionsText3);
         for (CheckBox cb: typeBoxes) {
             centerPaneOptions.getChildren().add(cb);
         }
@@ -224,10 +220,11 @@ public class UserInterfaceGraphical extends Application {
         
         
         // Add components to bottom pane
-        bottomPaneOptions.getChildren().addAll(startButton, exitButton, statusText);
+        bottomPaneOptions.getChildren().addAll(startButton, statusText);
         
         // Add components to excercise options main pane
         optionsPane.setTop(topPaneOptions);
+        optionsPane.setRight(exitButton);
         optionsPane.setCenter(centerPaneOptions);
         optionsPane.setBottom(bottomPaneOptions);
         exerciseOptionsScene = new Scene(optionsPane, 800, 600);
@@ -345,13 +342,14 @@ public class UserInterfaceGraphical extends Application {
         }
         
         // add components to center pane
-        centerPaneExercise.getChildren().addAll(centerGridPaneExercise, notesLabel, notesTextField, saveNotesButton);
+        centerPaneExercise.getChildren().addAll(questionText, centerGridPaneExercise, notesLabel, notesTextField, saveNotesButton);
         
         // Add components to bottom pane
-        bottomPaneExercise.getChildren().addAll(showAnswersButton, nextTaskButton, stopButton, statusTextExercise);
+        bottomPaneExercise.getChildren().addAll(showAnswersButton, nextTaskButton, statusTextExercise);
         
         // Add components to excercise main pane
-        exercisePane.setTop(questionText);
+        //exercisePane.setTop(questionText);
+        exercisePane.setRight(stopButton);
         exercisePane.setCenter(centerPaneExercise);
         exercisePane.setBottom(bottomPaneExercise);
         exerciseScene = new Scene(exercisePane, 800, 600);
