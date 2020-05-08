@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
- * This class creates and an exercise based on the given options  
+ * This class creates an exercise based on the given options  
  */
 
 public class Exercise {

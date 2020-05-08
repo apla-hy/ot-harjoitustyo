@@ -7,7 +7,7 @@ import java.io.File;
 import java.io.FileWriter;
 
 /**
- * This class creates tasks based on the given data file and stores the tasks in a list   
+ * This class loads and saves tasks using the data file. Loaded tasks are stored in a list.   
  */
 public class TaskList {
     private ArrayList<Task> tasks;
@@ -17,7 +17,9 @@ public class TaskList {
         this.dataFile = dataFile;
         this.tasks = new ArrayList<>();
         boolean result = this.load();
-        if (!result) throw new IllegalArgumentException("Tiedoston " + this.dataFile + " lukeminen ei onnistunut");
+        if (!result) {
+            throw new IllegalArgumentException("Tiedoston " + this.dataFile + " lukeminen ei onnistunut");
+        }
     }
    
     /**
@@ -32,21 +34,15 @@ public class TaskList {
             // Read data rows
             while (fileReader.hasNextLine()) {
                 String[] parts = fileReader.nextLine().split(";");
-                Language questionLanguage = Language.valueOf(parts[0].trim());
-                Language answerLanguage = Language.valueOf(parts[1].trim());
-                WordType type = WordType.valueOf(parts[2].trim());
-                WordTense tense = WordTense.valueOf(parts[3].trim());
-                String question = parts[11].trim();
                 ArrayList<String> answers = new ArrayList<>();
                 for (int i = 0; i < 7; i++) {
-                    answers.add(parts[i+4].trim());
+                    answers.add(parts[i + 4].trim());
                 }
-                String notes = parts[12].trim();
                 boolean irregular = false;
                 if (parts[13].trim().equals("1")) {
                     irregular = true;
                 }
-                this.tasks.add(new Task(questionLanguage, answerLanguage, type, tense, question, answers, notes, irregular));
+                this.tasks.add(new Task(Language.valueOf(parts[0].trim()), Language.valueOf(parts[1].trim()), WordType.valueOf(parts[2].trim()), WordTense.valueOf(parts[3].trim()), parts[11].trim(), answers, parts[12].trim(), irregular));
             }
             return true;
         } catch (Exception e) {
@@ -61,7 +57,6 @@ public class TaskList {
      */
     public boolean save() {
         
-        // Save task list to file
         try (FileWriter writer = new FileWriter(new File(this.dataFile))) {
             for (Task task : tasks) {
                 String dataRow = task.getQuestionLanguage() + ";" + task.getAnswerLanguage() + ";" + task.getType() + ";" + task.getTense();
@@ -70,12 +65,11 @@ public class TaskList {
                     dataRow = dataRow + ";" + answer;
                 }
                 dataRow = dataRow + ";" + task.getQuestion() + ";" + task.getNotes();
+                String irregular = "0";
                 if (task.isIrregular()) {
-                    dataRow = dataRow + ";1";
-                } else {
-                    dataRow = dataRow + ";0";
+                    irregular = "1";
                 }
-                writer.write(dataRow + "\n");
+                writer.write(dataRow + ";" + irregular + "\n");
             }
         } catch (Exception e) {
             return false;
