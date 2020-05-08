@@ -4,6 +4,7 @@ package languagetrainer.domain;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.File;
+import java.io.FileWriter;
 
 /**
  * This class creates tasks based on the given input file and stores the tasks in a list   
@@ -27,7 +28,7 @@ public class TaskList {
             
             // Read data rows
             while (fileReader.hasNextLine()) {
-                String[] parts = fileReader.nextLine().split(",");
+                String[] parts = fileReader.nextLine().split(";");
                 Language questionLanguage = Language.valueOf(parts[0].trim());
                 Language answerLanguage = Language.valueOf(parts[1].trim());
                 WordType type = WordType.valueOf(parts[2].trim());
@@ -38,7 +39,11 @@ public class TaskList {
                     answers.add(parts[i+4].trim());
                 }
                 String notes = parts[12].trim();
-                this.tasks.add(new Task(questionLanguage, answerLanguage, type, tense, question, answers, notes));
+                boolean irregular = false;
+                if (parts[13].trim().equals("1")) {
+                    irregular = true;
+                }
+                this.tasks.add(new Task(questionLanguage, answerLanguage, type, tense, question, answers, notes, irregular));
             }
         } catch (Exception e) {
             //e.printStackTrace();
@@ -48,9 +53,28 @@ public class TaskList {
     
     public boolean save() {
         
-        // Not implemented yet
-        
-        return false;
+        // Save task list to file
+        try (FileWriter writer = new FileWriter(new File(this.dataFile))) {
+            for (Task task : tasks) {
+                String dataRow = task.getQuestionLanguage() + ";" + task.getAnswerLanguage() + ";" + task.getType() + ";" + task.getTense();
+                ArrayList<String> answers = task.getAnswer();
+                for (String answer: answers) {
+                    dataRow = dataRow + ";" + answer;
+                }
+                dataRow = dataRow + ";" + task.getQuestion() + ";" + task.getNotes();
+                if (task.isIrregular()) {
+                    dataRow = dataRow + ";1";
+                } else {
+                    dataRow = dataRow + ";0";
+                }
+                writer.write(dataRow + "\n");
+            }
+        } catch (Exception e) {
+            //e.printStackTrace();
+            System.out.println(e);
+            return false;
+        }
+        return true;
     }
 
     public ArrayList<Task> getTasks() {

@@ -14,8 +14,9 @@ public class Task implements Comparable<Task> {
     private String question;
     private ArrayList<String> answer;
     private String notes;
+    private boolean irregular;
 
-    public Task(Language questionLanguage, Language answerLanguage, WordType type, WordTense tense, String question, ArrayList<String> answer, String notes) {
+    public Task(Language questionLanguage, Language answerLanguage, WordType type, WordTense tense, String question, ArrayList<String> answer, String notes, boolean irregular) {
         this.questionLanguage = questionLanguage;
         this.answerLanguage = answerLanguage;
         this.type = type;
@@ -23,6 +24,7 @@ public class Task implements Comparable<Task> {
         this.question = question;
         this.answer = answer;
         this.notes = notes;
+        this.irregular = irregular;
     }
 
     public String getQuestion() {
@@ -35,6 +37,10 @@ public class Task implements Comparable<Task> {
     
     public String getNotes() {
         return notes;
+    }
+
+    public void setNotes(String notes) {
+        this.notes = notes;
     }
 
     public Language getQuestionLanguage() {
@@ -52,6 +58,11 @@ public class Task implements Comparable<Task> {
     public WordTense getTense() {
         return tense;
     }
+
+    public boolean isIrregular() {
+        return irregular;
+    }
+    
 
     @Override
     public int compareTo(Task task) {

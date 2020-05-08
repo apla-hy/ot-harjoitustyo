@@ -215,7 +215,8 @@ public class UserInterfaceGraphical extends Application {
         
         // Create components
         BorderPane exercisePane = new BorderPane();
-        GridPane centerPaneExercise = new GridPane();
+        VBox centerPaneExercise = new VBox();
+        GridPane centerGridPaneExercise = new GridPane();
         HBox bottomPaneExercise = new HBox(2);
         
         // Question text
@@ -243,8 +244,9 @@ public class UserInterfaceGraphical extends Application {
             resultLabels.add(lb);
         }
         
-        // Notes label
-        Label notesLabel = new Label("");
+        // Notes label and text box
+        Label notesLabel = new Label("Muistiinpanot ja esimerkit:");
+        TextField notesTextField = new TextField("");
         
         // Button show answers
         Button showAnswersButton = new Button("Näytä vastaukset");
@@ -253,7 +255,7 @@ public class UserInterfaceGraphical extends Application {
                 for (int i = 0; i < answers.size(); i++) {
                     resultLabels.get(i).setText(this.currentTask.getAnswer().get(i));
                 }
-                notesLabel.setText(this.currentTask.getNotes());
+                notesTextField.setText(this.currentTask.getNotes());
             }
         });
         
@@ -263,7 +265,7 @@ public class UserInterfaceGraphical extends Application {
             for (int i = 0; i < answers.size(); i++) {
                 resultLabels.get(i).setText("");
             }
-            notesLabel.setText("");
+            notesTextField.setText("");
             this.currentTask = this.exercise.getNextTask();
             for (int i = 0; i < answers.size(); i++) {
                 answers.get(i).setText("");
@@ -282,26 +284,37 @@ public class UserInterfaceGraphical extends Application {
                 answers.get(i).setText("");
                 resultLabels.get(i).setText("");
             }
-            notesLabel.setText("");
+            notesTextField.setText("");
             primaryStage.setScene(exerciseOptionsScene);
         });
+                
+        // Button save notes
+        Button saveNotesButton = new Button("Tallenna muistiinpanot");
+        saveNotesButton.setOnAction((event) -> {
+            String notes = notesTextField.getText();
+            // Check that notes don't contain ";" needs to be implemented
+            this.currentTask.setNotes(notes);
+            taskList.save();
+        });
         
-        // Add components to center pane
+        // Add components to center grid pane
         for (int i = 0; i < answerLabels.size(); i++) {
-            centerPaneExercise.add(answerLabels.get(i), 1, i+1);
+            centerGridPaneExercise.add(answerLabels.get(i), 1, i+1);
         }
         for (int i = 0; i < answers.size(); i++) {
-            centerPaneExercise.add(answers.get(i), 2, i+1);
+            centerGridPaneExercise.add(answers.get(i), 2, i+1);
         }
         for (int i = 0; i < resultLabels.size(); i++) {
-            centerPaneExercise.add(resultLabels.get(i), 3, i+1);
+            centerGridPaneExercise.add(resultLabels.get(i), 3, i+1);
         }
-        centerPaneExercise.add(notesLabel,4,1);
+        
+        // add components to center pane
+        centerPaneExercise.getChildren().addAll(centerGridPaneExercise, notesLabel, notesTextField, saveNotesButton);
         
         // Add components to bottom pane
         bottomPaneExercise.getChildren().addAll(showAnswersButton, nextTaskButton, stopButton);
         
-        // Add components to excercise options main pane
+        // Add components to excercise main pane
         exercisePane.setTop(questionText);
         exercisePane.setCenter(centerPaneExercise);
         exercisePane.setBottom(bottomPaneExercise);

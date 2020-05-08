@@ -1,106 +1,106 @@
-FINNISH,SPANISH,VERB,PRESENT,abrir,abro,abres,abre,abrimos,abrís,abren,avata  ,testi,0
-FINNISH,SPANISH,VERB,PRESENT,aceptar,acepto,aceptas,acepta,aceptamos,aceptáis,aceptan,hyväksyä; ottaa vastaan ,,0
-FINNISH,SPANISH,VERB,PRESENT,andar,ando,andas,anda,andamos,andáis,andan,kävellä  ,,0
-FINNISH,SPANISH,VERB,PRESENT,apagar,apago,apagas,apaga,apagamos,apagáis,apagan,sammuttaa; vaimentaa ,,0
-FINNISH,SPANISH,VERB,PRESENT,aprender,aprendo,aprendes,aprende,aprendemos,aprendéis,aprenden,oppia  ,,0
-FINNISH,SPANISH,VERB,PRESENT,ayudar,ayudo,ayudas,ayuda,ayudamos,ayudáis,ayudan,auttaa  ,,0
-FINNISH,SPANISH,VERB,PRESENT,bailar,bailo,bailas,baila,bailamos,bailáis,bailan,tanssia  ,,0
-FINNISH,SPANISH,VERB,PRESENT,beber,bebo,bebes,bebe,bebemos,bebéis,beben,juoda  ,,0
-FINNISH,SPANISH,VERB,PRESENT,caber,quepo,cabes,cabe,cabemos,cabéis,caben,"mahtua, sopia",,1
-FINNISH,SPANISH,VERB,PRESENT,cambiar,cambio,cambias,cambia,cambiamos,cambiáis,cambian,vaihtaa  ,,0
-FINNISH,SPANISH,VERB,PRESENT,cancelar,cancelo,cancelas,cancela,cancelamos,canceláis,cancelan,peruuttaa  ,,0
-FINNISH,SPANISH,VERB,PRESENT,cantar,canto,cantas,canta,cantamos,cantáis,cantan,laulaa  ,,0
-FINNISH,SPANISH,VERB,PRESENT,cerrar,cierro,cierras,cierra,cerramos,cerráis,cierran,sulkea  ,,1
-FINNISH,SPANISH,VERB,PRESENT,cocinar,cocino,cocinas,cocina,cocinamos,cocináis,cocinan,laittaa ruokaa  ,,0
-FINNISH,SPANISH,VERB,PRESENT,coger,cojo,coges,coge,cogemos,cogéis,cogen,ottaa (kiinni); tarttua,Lat.Am. Myös nussia,1
-FINNISH,SPANISH,VERB,PRESENT,comenzar,comienzo,comienzas,comienza,comenzamos,comenzáis,comienzan,aloittaa  ,,1
-FINNISH,SPANISH,VERB,PRESENT,comer,como,comes,come,comemos,coméis,comen,syödä  ,,0
-FINNISH,SPANISH,VERB,PRESENT,comprar,compro,compras,compra,compramos,compráis,compran,ostaa  ,,0
-FINNISH,SPANISH,VERB,PRESENT,comprender,comprendo,comprendes,comprende,comprendemos,comprendéis,comprenden,käsittää; ymmärtää ,,1
-FINNISH,SPANISH,VERB,PRESENT,concluir,concluyo,concluyes,concluye,concluimos,concluís,concluyen,lopettaa; päättää ,,1
-FINNISH,SPANISH,VERB,PRESENT,conducir,conduzco,conduces,conduce,conducimos,conducís,conducen,ajaa  ,,1
-FINNISH,SPANISH,VERB,PRESENT,conocer,conozco,conoces,conoce,conocemos,conocéis,conocen,tuntea; tunnistaa ,,1
-FINNISH,SPANISH,VERB,PRESENT,contar,cuento,cuentas,cuenta,contamos,contáis,cuentan,laskea; kertoa ,,1
-FINNISH,SPANISH,VERB,PRESENT,contestar,contesto,contestas,contesta,contestamos,contestáis,contestan,vastata  ,,0
-FINNISH,SPANISH,VERB,PRESENT,correr,corro,corres,corre,corremos,corréis,corren,juosta  ,,0
-FINNISH,SPANISH,VERB,PRESENT,cortar,corto,cortas,corta,cortamos,cortáis,cortan,leikata; katkaista ,,0
-FINNISH,SPANISH,VERB,PRESENT,costar,cuesto,cuestas,cuesta,costamos,costáis,cuestan,maksaa; olla hintana ,,1
-FINNISH,SPANISH,VERB,PRESENT,creer,creo,crees,cree,creemos,creéis,creen,uskoa; luottaa ,,0
-FINNISH,SPANISH,VERB,PRESENT,dañar,daño,dañas,daña,dañamos,dañáis,dañan,loukkaantua  ,,0
-FINNISH,SPANISH,VERB,PRESENT,dar,doy,das,da,damos,dais,dan,antaa  ,,1
-FINNISH,SPANISH,VERB,PRESENT,deber,debo,debes,debe,debemos,debéis,deben,täytyä; pitää  ,,0
-FINNISH,SPANISH,VERB,PRESENT,decidir,decido,decides,decide,decidimos,decidís,deciden,ratkaista; päättää ,,0
-FINNISH,SPANISH,VERB,PRESENT,decir,digo,dices,dice,decimos,decís,dicen,sanoa; kertoa ,,1
-FINNISH,SPANISH,VERB,PRESENT,despertar,despierto,despiertas,despierta,despertamos,despertáis,despiertan,herättää  ,,1
-FINNISH,SPANISH,VERB,PRESENT,dibujar,dibujo,dibujas,dibuja,dibujamos,dibujáis,dibujan,piirtää  ,,0
-FINNISH,SPANISH,VERB,PRESENT,dormir,duermo,duermes,duerme,dormimos,dormís,duermen,nukkua  ,,1
-FINNISH,SPANISH,VERB,PRESENT,empezar,empiezo,empiezas,empieza,empezamos,empezáis,empiezan,alkaa; aloittaa ,,1
-FINNISH,SPANISH,VERB,PRESENT,encender,enciendo,enciendes,enciende,encendemos,encendéis,encienden,sytyttää  ,,1
-FINNISH,SPANISH,VERB,PRESENT,encontrar,encuentro,encuentras,encuentra,encontramos,encontráis,encuentran,löytää; kohdata ,,1
-FINNISH,SPANISH,VERB,PRESENT,enseñar,enseño,enseñas,enseña,enseñamos,enseñáis,enseñan,opettaa  ,,0
-FINNISH,SPANISH,VERB,PRESENT,entender,entiendo,entiendes,entiende,entendemos,entendéis,entienden,ymmärtää  ,,1
-FINNISH,SPANISH,VERB,PRESENT,enviar,envío,envías,envía,enviamos,enviáis,envían,lähettää  ,,0
-FINNISH,SPANISH,VERB,PRESENT,escribir,escribo,escribes,escribe,escribimos,escribís,escriben,kirjoittaa  ,,0
-FINNISH,SPANISH,VERB,PRESENT,escuchar,escucho,escuchas,escucha,escuchamos,escucháis,escuchan,kuunnella  ,,0
-FINNISH,SPANISH,VERB,PRESENT,esperar,espero,esperas,espera,esperamos,esperáis,esperan,odottaa; toivoa ,,0
-FINNISH,SPANISH,VERB,PRESENT,estar,estoy,estás,está,estamos,estáis,están,olla; sijaita ,,1
-FINNISH,SPANISH,VERB,PRESENT,estudiar,estudio,estudias,estudia,estudiamos,estudiáis,estudian,opiskella  ,,0
-FINNISH,SPANISH,VERB,PRESENT,explicar,explico,explicas,explica,explicamos,explicáis,explican,selittää; selvittää ,,0
-FINNISH,SPANISH,VERB,PRESENT,firmar,firmo,firmas,firma,firmamos,firmáis,firman,allekirjoittaa  ,,0
-FINNISH,SPANISH,VERB,PRESENT,freír,frío,fríes,fríe,freímos,freís,fríen,paistaa (pannussa) ,,1
-FINNISH,SPANISH,VERB,PRESENT,fumar,fumo,fumas,fuma,fumamos,fumáis,fuman,polttaa tupakkaa ,,0
-FINNISH,SPANISH,VERB,PRESENT,gastar,gasto,gastas,gasta,gastamos,gastáis,gastan,kuluttaa; käyttää ,,0
-FINNISH,SPANISH,VERB,PRESENT,hablar,hablo,hablas,habla,hablamos,habláis,hablan,puhua; jutella ,,0
-FINNISH,SPANISH,VERB,PRESENT,hacer,hago,haces,hace,hacemos,hacéis,hacen,tehdä  ,,1
-FINNISH,SPANISH,VERB,PRESENT,herir,hiero,hieres,hiere,herimos,herís,hieren,haavoittaa; loukata; vahingoittaa,,1
-FINNISH,SPANISH,VERB,PRESENT,incluir,incluyo,incluyes,incluye,incluimos,incluís,incluyen,sisältää; sisällyttää ,,1
-FINNISH,SPANISH,VERB,PRESENT,intentar,intento,intentas,intenta,intentamos,intentáis,intentan,yrittää; koettaa ,,0
-FINNISH,SPANISH,VERB,PRESENT,ir,voy,vas,va,vamos,vais,van,mennä  ,,1
-FINNISH,SPANISH,VERB,PRESENT,jugar,juego,juegas,juega,jugamos,jugáis,juegan,pelata  ,,1
-FINNISH,SPANISH,VERB,PRESENT,leer,leo,lees,lee,leemos,leéis,leen,lukea  ,,0
-FINNISH,SPANISH,VERB,PRESENT,limpiar,limpio,limpias,limpia,limpiamos,limpiáis,limpian,siivota  ,,0
-FINNISH,SPANISH,VERB,PRESENT,llenar,lleno,llenas,llena,llenamos,llenáis,llenan,täyttää; vallata ,,0
-FINNISH,SPANISH,VERB,PRESENT,mirar,miro,miras,mira,miramos,miráis,miran,katsoa  ,,0
-FINNISH,SPANISH,VERB,PRESENT,nadar,nado,nadas,nada,nadamos,nadáis,nadan,uida  ,,0
-FINNISH,SPANISH,VERB,PRESENT,necesitar,necesito,necesitas,necesita,necesitamos,necesitáis,necesitan,tarvita; pakottaa ,,0
-FINNISH,SPANISH,VERB,PRESENT,oir,oigo,oyes,oye,oímos,oís,oyen,kuulla  ,,1
-FINNISH,SPANISH,VERB,PRESENT,oler,huelo,hueles,huele,olemos,oléis,huelen,haistaa  ,,1
-FINNISH,SPANISH,VERB,PRESENT,olvidar,olvido,olvidas,olvida,olvidamos,olvidáis,olvidan,unohtaa  ,,0
-FINNISH,SPANISH,VERB,PRESENT,organizar,organizo,organizas,organiza,organizamos,organizáis,organizan,järjestää  ,,0
-FINNISH,SPANISH,VERB,PRESENT,pagar,pago,pagas,paga,pagamos,pagáis,pagan,maksaa  ,,0
-FINNISH,SPANISH,VERB,PRESENT,parecer,parezco,pareces,parece,parecemos,parecéis,parecen,näyttää jltak; vaikuttaa,,1
-FINNISH,SPANISH,VERB,PRESENT,pedir,pido,pides,pide,pedimos,pedís,piden,pyytää; anoa ,,1
-FINNISH,SPANISH,VERB,PRESENT,pensar,pienso,piensas,piensa,pensamos,pensáis,piensan,ajatella; aikoa ,,1
-FINNISH,SPANISH,VERB,PRESENT,perder,pierdo,pierdes,pierde,perdemos,perdéis,pierden,menettää; kadottaa; hävittää,,1
-FINNISH,SPANISH,VERB,PRESENT,permitir,permito,permites,permite,permitimos,permitís,permiten,luvata; sallia; antaa,,0
-FINNISH,SPANISH,VERB,PRESENT,poder,puedo,puedes,puede,podemos,podéis,pueden,voida; kyeta; pystyä,,1
-FINNISH,SPANISH,VERB,PRESENT,poner,pongo,pones,pone,ponemos,ponéis,ponen,pistää  ,,1
-FINNISH,SPANISH,VERB,PRESENT,preferir,prefiero,prefieres,prefiere,preferimos,preferís,prefieren,pitää parempana ,,1
-FINNISH,SPANISH,VERB,PRESENT,preguntar,pregunto,preguntas,pregunta,preguntamos,preguntáis,preguntan,kysyä  ,,0
-FINNISH,SPANISH,VERB,PRESENT,prestar,presto,prestas,presta,prestamos,prestáis,prestan,lainata  ,,0
-FINNISH,SPANISH,VERB,PRESENT,quedar,quedo,quedas,queda,quedamos,quedáis,quedan,jäädä jnnek/jäljelle; päättää;,,0
-FINNISH,SPANISH,VERB,PRESENT,querer,quiero,quieres,quiere,queremos,queréis,quieren,haluta; tahtoa ,,1
-FINNISH,SPANISH,VERB,PRESENT,recomendar,recomiendo,recomiendas,recomienda,recomendamos,recomendáis,recomiendan,suositella  ,,1
-FINNISH,SPANISH,VERB,PRESENT,recordar,recuerdo,recuerdas,recuerda,recordamos,recordáis,recuerdan,muistaa  ,,1
-FINNISH,SPANISH,VERB,PRESENT,reparar,reparo,reparas,repara,reparamos,reparáis,reparan,korjata  ,,0
-FINNISH,SPANISH,VERB,PRESENT,responder,respondo,respondes,responde,respondemos,respondéis,responden,vastata  ,,0
-FINNISH,SPANISH,VERB,PRESENT,romper,rompo,rompes,rompe,rompemos,rompéis,rompen,rikkoa; särkeä; repiä,,0
-FINNISH,SPANISH,VERB,PRESENT,saber,sé,sabes,sabe,sabemos,sabéis,saben,tietää; osata ,,1
-FINNISH,SPANISH,VERB,PRESENT,salir,salgo,sales,sale,salimos,salís,salen,lähteä  ,,1
-FINNISH,SPANISH,VERB,PRESENT,sentir,siento,sientes,siente,sentimos,sentís,sienten,tuntea; aistia ,,1
-FINNISH,SPANISH,VERB,PRESENT,ser,soy,eres,es,somos,sois,son,olla  ,,1
-FINNISH,SPANISH,VERB,PRESENT,tener,tengo,tienes,tiene,tenemos,tenéis,tienen,olla; omistaa,verbi + que = täytyä,1
-FINNISH,SPANISH,VERB,PRESENT,terminar,termino,terminas,termina,terminamos,termináis,terminan,lopettaa; saattaa päätökseen,,0
-FINNISH,SPANISH,VERB,PRESENT,tocar,toco,tocas,toca,tocamos,tocáis,tocan,soittaa; koskettaa,,0
-FINNISH,SPANISH,VERB,PRESENT,tomar,tomo,tomas,toma,tomamos,tomáis,toman,ottaa  ,,0
-FINNISH,SPANISH,VERB,PRESENT,trabajar,trabajo,trabajas,trabaja,trabajamos,trabajáis,trabajan,työskennellä  ,,0
-FINNISH,SPANISH,VERB,PRESENT,traducir,traduzco,traduces,traduce,traducimos,traducís,traducen,kääntää; vaihtaa ,,1
-FINNISH,SPANISH,VERB,PRESENT,traer,traigo,traes,trae,traemos,traéis,traen,hakea; noutaa,,1
-FINNISH,SPANISH,VERB,PRESENT,usar,uso,usas,usa,usamos,usáis,usan,käyttää  ,,0
-FINNISH,SPANISH,VERB,PRESENT,vender,vendo,vendes,vende,vendemos,vendéis,venden,myydä  ,,0
-FINNISH,SPANISH,VERB,PRESENT,ver,veo,ves,ve,vemos,veis,ven,nähdä  ,,1
-FINNISH,SPANISH,VERB,PRESENT,viajar,viajo,viajas,viaja,viajamos,viajáis,viajan,matkustaa  ,,0
-FINNISH,SPANISH,VERB,PRESENT,vivir,vivo,vives,vive,vivimos,vivís,viven,asua; elää ,,0
-FINNISH,SPANISH,VERB,PRESENT,volar,vuelo,vuelas,vuela,volamos,voláis,vuelan,lentää  ,,1
-FINNISH,SPANISH,VERB,PRESENT,volver,vuelvo,vuelves,vuelve,volvemos,volvéis,vuelven,palata; jättää ,,1
-SPANISH,FINNISH,NOUN,IMPERFECT,avata,avaan,avaat,avaa,avaamme,avaatte,avaavat,abrir  ,,0
+FINNISH;SPANISH;VERB;PRESENT;abrir;abro;abres;abre;abrimos;abrís;abren;avata;testi;0
+FINNISH;SPANISH;VERB;PRESENT;aceptar;acepto;aceptas;acepta;aceptamos;aceptáis;aceptan;hyväksyä, ottaa vastaan;joopa joo;0
+FINNISH;SPANISH;VERB;PRESENT;andar;ando;andas;anda;andamos;andáis;andan;kävellä;;0
+FINNISH;SPANISH;VERB;PRESENT;apagar;apago;apagas;apaga;apagamos;apagáis;apagan;sammuttaa, vaimentaa;;0
+FINNISH;SPANISH;VERB;PRESENT;aprender;aprendo;aprendes;aprende;aprendemos;aprendéis;aprenden;oppia;;0
+FINNISH;SPANISH;VERB;PRESENT;ayudar;ayudo;ayudas;ayuda;ayudamos;ayudáis;ayudan;auttaa;;0
+FINNISH;SPANISH;VERB;PRESENT;bailar;bailo;bailas;baila;bailamos;bailáis;bailan;tanssia;;0
+FINNISH;SPANISH;VERB;PRESENT;beber;bebo;bebes;bebe;bebemos;bebéis;beben;juoda;;0
+FINNISH;SPANISH;VERB;PRESENT;caber;quepo;cabes;cabe;cabemos;cabéis;caben;mahtua, sopia;;1
+FINNISH;SPANISH;VERB;PRESENT;cambiar;cambio;cambias;cambia;cambiamos;cambiáis;cambian;vaihtaa;;0
+FINNISH;SPANISH;VERB;PRESENT;cancelar;cancelo;cancelas;cancela;cancelamos;canceláis;cancelan;peruuttaa;;0
+FINNISH;SPANISH;VERB;PRESENT;cantar;canto;cantas;canta;cantamos;cantáis;cantan;laulaa;;0
+FINNISH;SPANISH;VERB;PRESENT;cerrar;cierro;cierras;cierra;cerramos;cerráis;cierran;sulkea;;1
+FINNISH;SPANISH;VERB;PRESENT;cocinar;cocino;cocinas;cocina;cocinamos;cocináis;cocinan;laittaa ruokaa;;0
+FINNISH;SPANISH;VERB;PRESENT;coger;cojo;coges;coge;cogemos;cogéis;cogen;ottaa (kiinni), tarttua;Lat.Am. Myös nussia;1
+FINNISH;SPANISH;VERB;PRESENT;comenzar;comienzo;comienzas;comienza;comenzamos;comenzáis;comienzan;aloittaa;;1
+FINNISH;SPANISH;VERB;PRESENT;comer;como;comes;come;comemos;coméis;comen;syödä;;0
+FINNISH;SPANISH;VERB;PRESENT;comprar;compro;compras;compra;compramos;compráis;compran;ostaa;;0
+FINNISH;SPANISH;VERB;PRESENT;comprender;comprendo;comprendes;comprende;comprendemos;comprendéis;comprenden;käsittää, ymmärtää;;1
+FINNISH;SPANISH;VERB;PRESENT;concluir;concluyo;concluyes;concluye;concluimos;concluís;concluyen;lopettaa, päättää;;1
+FINNISH;SPANISH;VERB;PRESENT;conducir;conduzco;conduces;conduce;conducimos;conducís;conducen;ajaa;;1
+FINNISH;SPANISH;VERB;PRESENT;conocer;conozco;conoces;conoce;conocemos;conocéis;conocen;tuntea, tunnistaa;;1
+FINNISH;SPANISH;VERB;PRESENT;contar;cuento;cuentas;cuenta;contamos;contáis;cuentan;laskea, kertoa;;1
+FINNISH;SPANISH;VERB;PRESENT;contestar;contesto;contestas;contesta;contestamos;contestáis;contestan;vastata;;0
+FINNISH;SPANISH;VERB;PRESENT;correr;corro;corres;corre;corremos;corréis;corren;juosta;;0
+FINNISH;SPANISH;VERB;PRESENT;cortar;corto;cortas;corta;cortamos;cortáis;cortan;leikata, katkaista;;0
+FINNISH;SPANISH;VERB;PRESENT;costar;cuesto;cuestas;cuesta;costamos;costáis;cuestan;maksaa, olla hintana;;1
+FINNISH;SPANISH;VERB;PRESENT;creer;creo;crees;cree;creemos;creéis;creen;uskoa, luottaa;;0
+FINNISH;SPANISH;VERB;PRESENT;dar;doy;das;da;damos;dais;dan;antaa;;1
+FINNISH;SPANISH;VERB;PRESENT;dañar;daño;dañas;daña;dañamos;dañáis;dañan;loukkaantua;;0
+FINNISH;SPANISH;VERB;PRESENT;deber;debo;debes;debe;debemos;debéis;deben;täytyä, pitää;;0
+FINNISH;SPANISH;VERB;PRESENT;decidir;decido;decides;decide;decidimos;decidís;deciden;ratkaista, päättää;;0
+FINNISH;SPANISH;VERB;PRESENT;decir;digo;dices;dice;decimos;decís;dicen;sanoa, kertoa;;1
+FINNISH;SPANISH;VERB;PRESENT;despertar;despierto;despiertas;despierta;despertamos;despertáis;despiertan;herättää;;1
+FINNISH;SPANISH;VERB;PRESENT;dibujar;dibujo;dibujas;dibuja;dibujamos;dibujáis;dibujan;piirtää;;0
+FINNISH;SPANISH;VERB;PRESENT;dormir;duermo;duermes;duerme;dormimos;dormís;duermen;nukkua;;1
+FINNISH;SPANISH;VERB;PRESENT;empezar;empiezo;empiezas;empieza;empezamos;empezáis;empiezan;alkaa, aloittaa;;1
+FINNISH;SPANISH;VERB;PRESENT;encender;enciendo;enciendes;enciende;encendemos;encendéis;encienden;sytyttää;;1
+FINNISH;SPANISH;VERB;PRESENT;encontrar;encuentro;encuentras;encuentra;encontramos;encontráis;encuentran;löytää, kohdata;;1
+FINNISH;SPANISH;VERB;PRESENT;enseñar;enseño;enseñas;enseña;enseñamos;enseñáis;enseñan;opettaa;;0
+FINNISH;SPANISH;VERB;PRESENT;entender;entiendo;entiendes;entiende;entendemos;entendéis;entienden;ymmärtää;;1
+FINNISH;SPANISH;VERB;PRESENT;enviar;envío;envías;envía;enviamos;enviáis;envían;lähettää;;0
+FINNISH;SPANISH;VERB;PRESENT;escribir;escribo;escribes;escribe;escribimos;escribís;escriben;kirjoittaa;;0
+FINNISH;SPANISH;VERB;PRESENT;escuchar;escucho;escuchas;escucha;escuchamos;escucháis;escuchan;kuunnella;;0
+FINNISH;SPANISH;VERB;PRESENT;esperar;espero;esperas;espera;esperamos;esperáis;esperan;odottaa, toivoa;;0
+FINNISH;SPANISH;VERB;PRESENT;estar;estoy;estás;está;estamos;estáis;están;olla, sijaita;;1
+FINNISH;SPANISH;VERB;PRESENT;estudiar;estudio;estudias;estudia;estudiamos;estudiáis;estudian;opiskella;;0
+FINNISH;SPANISH;VERB;PRESENT;explicar;explico;explicas;explica;explicamos;explicáis;explican;selittää, selvittää;;0
+FINNISH;SPANISH;VERB;PRESENT;firmar;firmo;firmas;firma;firmamos;firmáis;firman;allekirjoittaa;;0
+FINNISH;SPANISH;VERB;PRESENT;freír;frío;fríes;fríe;freímos;freís;fríen;paistaa (pannussa);;1
+FINNISH;SPANISH;VERB;PRESENT;fumar;fumo;fumas;fuma;fumamos;fumáis;fuman;polttaa tupakkaa;;0
+FINNISH;SPANISH;VERB;PRESENT;gastar;gasto;gastas;gasta;gastamos;gastáis;gastan;kuluttaa, käyttää;;0
+FINNISH;SPANISH;VERB;PRESENT;hablar;hablo;hablas;habla;hablamos;habláis;hablan;puhua, jutella;;0
+FINNISH;SPANISH;VERB;PRESENT;hacer;hago;haces;hace;hacemos;hacéis;hacen;tehdä;;1
+FINNISH;SPANISH;VERB;PRESENT;herir;hiero;hieres;hiere;herimos;herís;hieren;haavoittaa, loukata, vahingoittaa;;1
+FINNISH;SPANISH;VERB;PRESENT;incluir;incluyo;incluyes;incluye;incluimos;incluís;incluyen;sisältää, sisällyttää;;1
+FINNISH;SPANISH;VERB;PRESENT;intentar;intento;intentas;intenta;intentamos;intentáis;intentan;yrittää, koettaa;;0
+FINNISH;SPANISH;VERB;PRESENT;ir;voy;vas;va;vamos;vais;van;mennä;;1
+FINNISH;SPANISH;VERB;PRESENT;jugar;juego;juegas;juega;jugamos;jugáis;juegan;pelata;;1
+FINNISH;SPANISH;VERB;PRESENT;leer;leo;lees;lee;leemos;leéis;leen;lukea;;0
+FINNISH;SPANISH;VERB;PRESENT;limpiar;limpio;limpias;limpia;limpiamos;limpiáis;limpian;siivota;;0
+FINNISH;SPANISH;VERB;PRESENT;llenar;lleno;llenas;llena;llenamos;llenáis;llenan;täyttää, vallata;;0
+FINNISH;SPANISH;VERB;PRESENT;mirar;miro;miras;mira;miramos;miráis;miran;katsoa;;0
+FINNISH;SPANISH;VERB;PRESENT;nadar;nado;nadas;nada;nadamos;nadáis;nadan;uida;;0
+FINNISH;SPANISH;VERB;PRESENT;necesitar;necesito;necesitas;necesita;necesitamos;necesitáis;necesitan;tarvita, pakottaa;;0
+FINNISH;SPANISH;VERB;PRESENT;oir;oigo;oyes;oye;oímos;oís;oyen;kuulla;;1
+FINNISH;SPANISH;VERB;PRESENT;oler;huelo;hueles;huele;olemos;oléis;huelen;haistaa;;1
+FINNISH;SPANISH;VERB;PRESENT;olvidar;olvido;olvidas;olvida;olvidamos;olvidáis;olvidan;unohtaa;;0
+FINNISH;SPANISH;VERB;PRESENT;organizar;organizo;organizas;organiza;organizamos;organizáis;organizan;järjestää;;0
+FINNISH;SPANISH;VERB;PRESENT;pagar;pago;pagas;paga;pagamos;pagáis;pagan;maksaa;;0
+FINNISH;SPANISH;VERB;PRESENT;parecer;parezco;pareces;parece;parecemos;parecéis;parecen;näyttää jltak, vaikuttaa;;1
+FINNISH;SPANISH;VERB;PRESENT;pedir;pido;pides;pide;pedimos;pedís;piden;pyytää, anoa;;1
+FINNISH;SPANISH;VERB;PRESENT;pensar;pienso;piensas;piensa;pensamos;pensáis;piensan;ajatella, aikoa;;1
+FINNISH;SPANISH;VERB;PRESENT;perder;pierdo;pierdes;pierde;perdemos;perdéis;pierden;menettää, kadottaa, hävittää;;1
+FINNISH;SPANISH;VERB;PRESENT;permitir;permito;permites;permite;permitimos;permitís;permiten;luvata, sallia, antaa;;0
+FINNISH;SPANISH;VERB;PRESENT;poder;puedo;puedes;puede;podemos;podéis;pueden;voida, kyeta, pystyä;;1
+FINNISH;SPANISH;VERB;PRESENT;poner;pongo;pones;pone;ponemos;ponéis;ponen;pistää;;1
+FINNISH;SPANISH;VERB;PRESENT;preferir;prefiero;prefieres;prefiere;preferimos;preferís;prefieren;pitää parempana;;1
+FINNISH;SPANISH;VERB;PRESENT;preguntar;pregunto;preguntas;pregunta;preguntamos;preguntáis;preguntan;kysyä;;0
+FINNISH;SPANISH;VERB;PRESENT;prestar;presto;prestas;presta;prestamos;prestáis;prestan;lainata;;0
+FINNISH;SPANISH;VERB;PRESENT;quedar;quedo;quedas;queda;quedamos;quedáis;quedan;jäädä jnnek/jäljelle, päättää;;0
+FINNISH;SPANISH;VERB;PRESENT;querer;quiero;quieres;quiere;queremos;queréis;quieren;haluta, tahtoa;;1
+FINNISH;SPANISH;VERB;PRESENT;recomendar;recomiendo;recomiendas;recomienda;recomendamos;recomendáis;recomiendan;suositella;;1
+FINNISH;SPANISH;VERB;PRESENT;recordar;recuerdo;recuerdas;recuerda;recordamos;recordáis;recuerdan;muistaa;;1
+FINNISH;SPANISH;VERB;PRESENT;reparar;reparo;reparas;repara;reparamos;reparáis;reparan;korjata;;0
+FINNISH;SPANISH;VERB;PRESENT;responder;respondo;respondes;responde;respondemos;respondéis;responden;vastata;;0
+FINNISH;SPANISH;VERB;PRESENT;romper;rompo;rompes;rompe;rompemos;rompéis;rompen;rikkoa, särkeä, repiä;;0
+FINNISH;SPANISH;VERB;PRESENT;saber;sé;sabes;sabe;sabemos;sabéis;saben;tietää, osata;;1
+FINNISH;SPANISH;VERB;PRESENT;salir;salgo;sales;sale;salimos;salís;salen;lähteä;;1
+FINNISH;SPANISH;VERB;PRESENT;sentir;siento;sientes;siente;sentimos;sentís;sienten;tuntea, aistia;;1
+FINNISH;SPANISH;VERB;PRESENT;ser;soy;eres;es;somos;sois;son;olla;;1
+FINNISH;SPANISH;VERB;PRESENT;tener;tengo;tienes;tiene;tenemos;tenéis;tienen;olla, omistaa;verbi + que = täytyä;1
+FINNISH;SPANISH;VERB;PRESENT;terminar;termino;terminas;termina;terminamos;termináis;terminan;lopettaa, saattaa päätökseen;;0
+FINNISH;SPANISH;VERB;PRESENT;tocar;toco;tocas;toca;tocamos;tocáis;tocan;soittaa, koskettaa;;0
+FINNISH;SPANISH;VERB;PRESENT;tomar;tomo;tomas;toma;tomamos;tomáis;toman;ottaa;;0
+FINNISH;SPANISH;VERB;PRESENT;trabajar;trabajo;trabajas;trabaja;trabajamos;trabajáis;trabajan;työskennellä;;0
+FINNISH;SPANISH;VERB;PRESENT;traducir;traduzco;traduces;traduce;traducimos;traducís;traducen;kääntää, vaihtaa;;1
+FINNISH;SPANISH;VERB;PRESENT;traer;traigo;traes;trae;traemos;traéis;traen;hakea, noutaa;;1
+FINNISH;SPANISH;VERB;PRESENT;usar;uso;usas;usa;usamos;usáis;usan;käyttää;;0
+FINNISH;SPANISH;VERB;PRESENT;vender;vendo;vendes;vende;vendemos;vendéis;venden;myydä;;0
+FINNISH;SPANISH;VERB;PRESENT;ver;veo;ves;ve;vemos;veis;ven;nähdä;;1
+FINNISH;SPANISH;VERB;PRESENT;viajar;viajo;viajas;viaja;viajamos;viajáis;viajan;matkustaa;;0
+FINNISH;SPANISH;VERB;PRESENT;vivir;vivo;vives;vive;vivimos;vivís;viven;asua, elää;;0
+FINNISH;SPANISH;VERB;PRESENT;volar;vuelo;vuelas;vuela;volamos;voláis;vuelan;lentää;;1
+FINNISH;SPANISH;VERB;PRESENT;volver;vuelvo;vuelves;vuelve;volvemos;volvéis;vuelven;palata, jättää;;1
+SPANISH;FINNISH;NOUN;IMPERFECT;avata;avaan;avaat;avaa;avaamme;avaatte;avaavat;abrir;;0

@@ -23,7 +23,7 @@ public class TaskTest {
         for (int i=0; i < answers.length; i++) {
             answers1.add(answers[i]);
         }
-        task1 = new Task(Language.FINNISH, Language.SPANISH, WordType.VERB, WordTense.PRESENT, "avata", answers1, "");
+        task1 = new Task(Language.FINNISH, Language.SPANISH, WordType.VERB, WordTense.PRESENT, "avata", answers1, "", false);
     }
         
     @Test
