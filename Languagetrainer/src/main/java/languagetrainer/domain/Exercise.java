@@ -30,7 +30,7 @@ public class Exercise {
         this.order = order;
         this.startChar = startChar;
         this.exerciseTasks = new ArrayList<>();
-        this.currentTask = 1;
+        this.currentTask = -1;
         this.createExercise();
     }
     
@@ -66,11 +66,11 @@ public class Exercise {
      */
     
     public Task getNextTask() {
-        if (this.currentTask > this.exerciseTasks.size()) {
+        if (this.currentTask+1 >= this.exerciseTasks.size()) {
             return null;        
         }
         this.currentTask++;
-        return this.exerciseTasks.get(this.currentTask - 2);
+        return this.exerciseTasks.get(this.currentTask);
     }
     
 }

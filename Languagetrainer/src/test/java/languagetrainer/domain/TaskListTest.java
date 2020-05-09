@@ -22,7 +22,7 @@ public class TaskListTest {
     public void setUp() {
         String dataFile1 = "vocabulary.csv";
         taskList1 = new TaskList(dataFile1);
-        String dataFile2 = "vocabularyForTestingOptions.csv";
+        String dataFile2 = "vocabularyForTesting.csv";
         taskList2 = new TaskList(dataFile2);
     }
     
@@ -43,7 +43,7 @@ public class TaskListTest {
 
     @Test
     public void correctNumberOfTasksInList2() {
-        assertEquals(106,taskList2.getTasks().size());      
+        assertEquals(2,taskList2.getTasks().size());      
     }
     
     @Test
@@ -64,5 +64,11 @@ public class TaskListTest {
     @Test
     public void correctNumberOfWordTenses() {
         assertEquals(2,taskList2.getTenses().size());      
+    }
+    
+    @Test
+    public void savingOfNotesIsWorking() {
+        boolean result = taskList2.save();
+        assertEquals(true,result);      
     }
 }

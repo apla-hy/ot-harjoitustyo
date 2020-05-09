@@ -7,7 +7,8 @@ import java.io.File;
 import java.io.FileWriter;
 
 /**
- * This class loads and saves tasks using the data file. Loaded tasks are stored in a list.   
+ * This class loads and saves tasks using the data file as well as provides methods that can be used to find out what kind of tasks are available.
+ * Loaded tasks are stored in a list.
  */
 public class TaskList {
     private ArrayList<Task> tasks;

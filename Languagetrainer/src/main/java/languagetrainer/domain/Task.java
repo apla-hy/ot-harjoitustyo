@@ -63,7 +63,6 @@ public class Task implements Comparable<Task> {
         return irregular;
     }
     
-
     @Override
     public int compareTo(Task task) {
         return this.answer.get(0).compareTo(task.getAnswer().get(0));
