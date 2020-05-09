@@ -14,6 +14,8 @@ Osa testeistä tarvitsee toimiakseen tiedoston *vocabularyForTesting.csv* sovell
 
 [Arkkitehtuurikuvaus](https://github.com/apla-hy/ot-harjoitustyo/blob/master/dokumentointi/arkkitehtuuri.md)
 
+[Testausdokumentti](https://github.com/apla-hy/ot-harjoitustyo/blob/master/dokumentointi/testaus.md)
+
 [Työaikakirjanpito](https://github.com/apla-hy/ot-harjoitustyo/blob/master/dokumentointi/tyoaikakirjanpito.md)
 
 ## Releaset
