@@ -2,9 +2,9 @@
 
 Sovelluksen avulla suomenkielentaitoinen henkilö voi opetella espanjan sanastoa. Nykyisellä versiolla voi harjoitella preesensin verbejä suomesta espanjaksi graafisella käyttöliitymällä.
 
-Sovellus tarvitsee toimiakseen tiedoston *espanjanverbilista.csv* sovelluksen juurihakemistoon.
+Sovellus tarvitsee toimiakseen tiedostot *config.properties* ja *vocabulary.csv* sovelluksen juurihakemistoon.
 
-Osa testeistä tarvitsee toimiakseen tiedoston *taskListForTestingOptions.csv* sovelluksen juurihakemistoon.
+Osa testeistä tarvitsee toimiakseen tiedoston *vocabularyForTesting.csv* sovelluksen juurihakemistoon.
 
 ## Dokumentaatio
 
@@ -71,5 +71,3 @@ JavaDocista saa luotua HTML-version suorittamalla komennon
 mvn javadoc:javadoc
 ```
 Generoitu JavaDoc löytyy hakemistosta *target/site/apidocs/*.
-
-
