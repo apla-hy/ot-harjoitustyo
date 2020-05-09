@@ -18,35 +18,22 @@ Sovellus aukeaa päävalikkoon. Päävalikosta siirrytään harjoitusnäkymään
 ## Perusversion tarjoama toiminnallisuus
 
 * Perusversiossa on mahdollista opetella ainoastaan verbejä eri aikamuodoissa.
-	* *Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
-	* *Tilanne (viikko 6): toteutettu graafisella käyttöliittymällä.*
 * Päävalikossa käyttäjä voi valita sopivan harjoituksen. Vaihtoehtoja ovat:
 	* Harjoittelun suunta (suomi - espanja tai espanja - suomi)
-	* Harjoituksen sisältämät aikamuodot (preesens, imperfekti, ...)
+	* Sanojen tyypit (perusversiossa vain verbi)
+	* Harjoituksen sisältämät aikamuodot (preesens imperfekti, ...)
 	* Kysymysten määrä
 	* Kysymysten järjestys (satunnainen tai aakkosjärjestys)
+	* Aloituskirjain (esimerkiksi kaikki verbit, joiden alkukirjain on välillä c-Z)
 * Valintojen jälkeen on mahdollista aloittaa harjoituksen tekeminen.
-	* *Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
-	* *Tilanne (viikko 6): toteutettu graafisella käyttöliittymällä.*
 * Harjoitusnäytössä käyttäjä näkee kysymyksen ja voi vastata siihen.
-	* *Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
-	* *Tilanne (viikko 6): toteutettu graafisella käyttöliittymällä.*
 * Tietystä verbistä kysytään kaikki persoonamuodot (esim. istun, istut, istuu, ...).
-	* *Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
-	* *Tilanne (viikko 6): toteutettu graafisella käyttöliittymällä.*
 * Vastauksen jälkeen käyttäjä näkee oikean vastauksen.
-	* *Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
-	* *Tilanne (viikko 6): toteutettu graafisella käyttöliittymällä.*
 * Kysymyksiin vastataan yksi kerrallaan.
-	* *Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
-	* *Tilanne (viikko 6): toteutettu graafisella käyttöliittymällä.*
 * Harjoitus loppuu, kun kaikkiin kysymyksiin on vastattu.
-	* *Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
-	* *Tilanne (viikko 6): toteutettu graafisella käyttöliittymällä.*
 * Käyttäjän on mahdollista lopettaa harjoitus kesken.
-	* *Tilanne (viikko 5): toteutettu tekstikäyttöliittymällä.*
-	* *Tilanne (viikko 6): toteutettu graafisella käyttöliittymällä.*
 * Käyttöliittymän kautta ei voi lisätä uusia verbejä vaan sanaston ylläpito tehdään muokkaamalla tiedostoja.
+* Käyttöliittymän kautta voi lisätä ja muokata tiettyyn sanaan liittyviä muistiinpanoja ja käyttöesimerkkejä.
 
 # Jatkokehitysideoita
 
@@ -58,4 +45,3 @@ Perusversion jälkeen sovellusta mahdollisesti laajennetaan seuraavilla toiminna
 * Sovelluksessa on pistelaskujärjestelmä eli oikeista vastauksista saa pisteitä ja kokonaispisteistä pidetään kirjaa.
 * Harjoituksen voi tallentaa. Toisin sanoen täsmälleen saman harjoituksen voi tehdä uudestaan, vaikka kysymykset olisi valittu satunnaisessa järjestyksessä.
 * Käyttöliittymän kautta voi lisätä uusia sanoja.
-* Käyttöliitymän kautta voi lisätä tiettyyn sanaan muistiinpanoja ja käyttöesimerkkejä.

@@ -12,6 +12,14 @@ Pakkaus *languagetrainer.ui* sisältää JavaFX:llä toteutetun käyttöliittym�
 
 ## Käyttöliittymä
 
+Käyttöliittymä on toteutettu graafisesti JavaFX:llä. Käyttöliittymässä on kaksi näkymää:
+* Päänäkymä
+* Harjoitusnäkymä
+
+Päänäkymässä valitaan sopivat asetukset uudelle harjoitukselle. Harjoitusnäkymässä vastataan harjoituksen kysymyksiin yksi kerrallaan ja tiettyyn sanaan liittyviä muistiinpanoja voidaan luoda ja muokata.
+
+
+
 ## Sovelluslogiikka
 
 Sovelluksen loogisen datamallin muodostavat luokat *Task*, *TaskList* ja *Exercise*. Luokka *Task* kuvaa yksittäistä tehtävää. Luokka *TaskList* sisältää listan kaikista sovelluksessa olevista yksittäisistä tehtävistä. Luokka *Exercise* kuvaa yksittäistä harjoitusta, joka koostuu tehtävistä. Luokkien välisiä suhteita kuvaa alla oleva luokkakaavio.
