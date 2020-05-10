@@ -348,7 +348,6 @@ public class UserInterfaceGraphical extends Application {
         bottomPaneExercise.getChildren().addAll(showAnswersButton, nextTaskButton, statusTextExercise);
         
         // Add components to excercise main pane
-        //exercisePane.setTop(questionText);
         exercisePane.setRight(stopButton);
         exercisePane.setCenter(centerPaneExercise);
         exercisePane.setBottom(bottomPaneExercise);
