@@ -2,7 +2,7 @@
 
 Ohjelman sovelluslogiikkaa on testattu jatkuvasti kehitystyön aikana automatisoidusti JUnitilla. Käyttöliittymää ja sovellusta kokonaisuutena on testattu melko paljon manuaalisesti.
 
-Testauksessa on käytetty apuna tiedostoa vocabularyForTesting.csv, sillä sovelluksen tällä hetkellä käyttämä sanasto koostuu pelkästään preesensin verbeistä ja näin ollen monissa valinnoissa on vain yksi vaihtoehto. Tiedoston vocabularyForTesting.csv avulla valintoihin on saatu enemmän kuin yksi vaihtoehto. Tiedostoa tarvitaan osaan automaattisista testeistä ja lisäksi sitä on hyödynnetty manuaalisessa käyttöliittymän kautta tapahtuneessa testaamisessa.
+Testauksessa on käytetty apuna tiedostoa *vocabularyForTesting.csv*, sillä sovelluksen tällä hetkellä käyttämä sanasto koostuu pelkästään preesensin verbeistä ja näin ollen monissa valinnoissa on vain yksi vaihtoehto. Tiedoston *vocabularyForTesting.csv* avulla valintoihin on saatu enemmän kuin yksi vaihtoehto. Tiedostoa tarvitaan osaan automaattisista testeistä ja lisäksi sitä on hyödynnetty manuaalisessa käyttöliittymän kautta tapahtuneessa testaamisessa.
 
 ## Yksikkö- ja integraatiotestaus
 
