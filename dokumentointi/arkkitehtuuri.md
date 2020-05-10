@@ -17,7 +17,7 @@ Käyttöliittymä on toteutettu graafisesti JavaFX:llä. Käyttöliittymässä o
 
 Päänäkymässä valitaan sopivat asetukset uudelle harjoitukselle. Harjoitusnäkymässä vastataan harjoituksen kysymyksiin yksi kerrallaan ja tiettyyn sanaan liittyviä muistiinpanoja voidaan luoda ja muokata. Käyttöliittymä on pyritty eriyttämään sovelluslogiikasta. Käyttöliittymän komponentit kutsuvat sovelluslogiikan toimintoja.
 
-Käyttöliittymän kieli on suomi. Valintalistojen käännökset haetaan tiedostosta.
+Käyttöliittymän kieli on suomi. Valintalistojen käännökset haetaan tiedostosta *Translations.properties*.
 
 ## Sovelluslogiikka
 
