@@ -56,7 +56,7 @@ Komento
 ```
 mvn package
 ```
-generoi hakemistoon target suoritettavan jar-tiedoston. Jar-tiedoston kanssa samassa hakemistossa pitää olla tiedosto *espanjanverbilista.csv*.
+generoi hakemistoon target suoritettavan jar-tiedoston. Jar-tiedoston kanssa samassa hakemistossa pitää olla tiedostot *config.properties* ja *vocabulary.csv*.
 
 ### Checkstyle
 
