@@ -24,6 +24,8 @@ Osa testeistä tarvitsee toimiakseen tiedoston *vocabularyForTesting.csv* sovell
 
 [Viikko 6](https://github.com/apla-hy/ot-harjoitustyo/releases/tag/viikko6)
 
+[Loppupalautus](https://github.com/apla-hy/ot-harjoitustyo/releases/tag/loppupalautus)
+
 ## Komentorivitoiminnot
 
 ### Testaus
