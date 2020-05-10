@@ -16,7 +16,7 @@ Sovelluksen automaattisen testauksen rivikattavuus on 93% ja haaraumakattavuus 6
 
 ## Järjestelmätestaus
 
-Sovelluksen järjestelmätestaus on tehty manuaalisesti kokeilemalla sovelluksen toimintoja käyttöliittymän kautta sekä muokkaamalla tiedostoa vocabulary.csv.
+Sovelluksen järjestelmätestaus on tehty manuaalisesti kokeilemalla sovelluksen toimintoja käyttöliittymän kautta sekä muokkaamalla tiedostoa *vocabulary.csv*.
 
 ## Asennus ja konfigurointi
 
