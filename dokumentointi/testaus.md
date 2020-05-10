@@ -30,4 +30,6 @@ Kaikki toteutetut perustoiminnallisuudet on käyty läpi ja syöttökenttiä on 
 
 Käyttöliittymä on toteutettu perusasetuksilla ja siksi sen visuaalinen ulkoasu ei ole erityisen hyvä. Harjoitustyön aikana on keskitytty lähes täysin toiminnallisuuden toteuttamiseen.
 
+Pysyväistallennuksen tietojen lukemisessa ei ole tiedon oikeellisuuden tarkistuksia. Nämä olisi hyvä lisätä, koska nykyversiossa uusien sanojen lisääminen tapahtuu tiedostoa muokkaamalla ja siksi tiedoston rakenteeseen voi tulla virheitä.
+
 Sovelluksen toiminnallisuus on melko yksinkertainen. Kuitenkin alussa tavoitteena ollut perustoiminnallisuus on toteutettu ja lisäksi on toteutettu muutama lisätoiminnallisuus, kuten muistiinpanojen tallennus. Koska sovellus jää todelliseen käyttöön myös harjoitustyön toteutuksen jälkeen, sovelluksen toiminnallisuutta on tarkoitus laajentaa myös kurssin päättymisen jälkeen.
