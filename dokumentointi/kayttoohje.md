@@ -1,6 +1,6 @@
 # Käyttöohje
 
-Lataa tiedostot languagetrainer.jar, vocabulary.csv ja config.properties.
+Lataa tiedostot *languagetrainer.jar*, *vocabulary.csv* ja *config.properties*.
 
 ## Konfigurointi
 
