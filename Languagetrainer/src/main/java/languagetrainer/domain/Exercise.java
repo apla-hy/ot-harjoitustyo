@@ -53,7 +53,7 @@ public class Exercise {
                     this.types.contains(task.getType()) &&
                     this.tenses.contains(task.getTense()) &&
                     task.getAnswer().get(0).compareTo(this.startChar) > 0) {
-                        this.exerciseTasks.add(task);
+                    this.exerciseTasks.add(task);
                 }
             }
         }        
@@ -66,7 +66,7 @@ public class Exercise {
      */
     
     public Task getNextTask() {
-        if (this.currentTask+1 >= this.exerciseTasks.size()) {
+        if (this.currentTask + 1 >= this.exerciseTasks.size()) {
             return null;        
         }
         this.currentTask++;
