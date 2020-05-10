@@ -19,12 +19,12 @@ Sovellus aukeaa päävalikkoon. Päävalikosta siirrytään harjoitusnäkymään
 
 * Perusversiossa on mahdollista opetella ainoastaan verbejä eri aikamuodoissa.
 * Päävalikossa käyttäjä voi valita sopivan harjoituksen. Vaihtoehtoja ovat:
-	* Harjoittelun suunta (suomi - espanja tai espanja - suomi)
+	* Harjoittelun suunta (perusversiossa vain suomi - espanja)
 	* Sanojen tyypit (perusversiossa vain verbi)
-	* Harjoituksen sisältämät aikamuodot (preesens imperfekti, ...)
+	* Harjoituksen sisältämät aikamuodot (perusversiossa vain preesens)
 	* Kysymysten määrä
 	* Kysymysten järjestys (satunnainen tai aakkosjärjestys)
-	* Aloituskirjain (esimerkiksi kaikki verbit, joiden alkukirjain on välillä c-Z)
+	* Aloituskirjain (esimerkiksi kaikki verbit, joiden alkukirjain on välillä c-z)
 * Valintojen jälkeen on mahdollista aloittaa harjoituksen tekeminen.
 * Harjoitusnäytössä käyttäjä näkee kysymyksen ja voi vastata siihen.
 * Tietystä verbistä kysytään kaikki persoonamuodot (esim. istun, istut, istuu, ...).
