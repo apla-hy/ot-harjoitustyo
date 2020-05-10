@@ -5,10 +5,9 @@
 Sovelluksen rakenteessa käyttöliittymät ja sovelluslogiikka on erotettu toisistaan. Pakkausrakenne on seuraava:
 * languagetrainer.main
 * languagetrainer.ui
-* languagetrainer.uitext
 * languagetrainer.domain
 
-Pakkaus *languagetrainer.ui* sisältää JavaFX:llä toteutetun käyttöliittymän ja *languagetrainer.domain* sovelluslogiikan. Pakkaus *languagetrainer.main* sisältää pelkästään sovelluksen käynnistämisessä käytettävän main-luokan. Pakkaus *languagetrainer.uitext* sisältää tekstikäyttöliitymän mutta tämä pakkaus ei ole käytössä nykyisessä sovellusversiossa.
+Pakkaus *languagetrainer.ui* sisältää JavaFX:llä toteutetun käyttöliittymän ja *languagetrainer.domain* sovelluslogiikan. Pakkaus *languagetrainer.main* sisältää pelkästään sovelluksen käynnistämisessä käytettävän main-luokan.
 
 ## Käyttöliittymä
 
@@ -16,9 +15,9 @@ Käyttöliittymä on toteutettu graafisesti JavaFX:llä. Käyttöliittymässä o
 * Päänäkymä
 * Harjoitusnäkymä
 
-Päänäkymässä valitaan sopivat asetukset uudelle harjoitukselle. Harjoitusnäkymässä vastataan harjoituksen kysymyksiin yksi kerrallaan ja tiettyyn sanaan liittyviä muistiinpanoja voidaan luoda ja muokata.
+Päänäkymässä valitaan sopivat asetukset uudelle harjoitukselle. Harjoitusnäkymässä vastataan harjoituksen kysymyksiin yksi kerrallaan ja tiettyyn sanaan liittyviä muistiinpanoja voidaan luoda ja muokata. Käyttöliittymä on pyritty eriyttämään sovelluslogiikasta. Käyttöliittymän komponentit kutsuvat sovelluslogiikan toimintoja.
 
-
+Käyttöliittymän kieli on suomi. Valintalistojen käännökset haetaan tiedostosta.
 
 ## Sovelluslogiikka
 
@@ -33,3 +32,11 @@ Sovelluksen loogisen datamallin muodostavat luokat *Task*, *TaskList* ja *Exerci
 Sovellus avautuu graafisen käyttöliittymän näkymään, jossa käyttäjä voi määrittää haluamansa harjoituksen vaihtoehdot. Painamalla nappia "Aloita uusi harjoitus" (startButton), sovellus luo uuden harjoituksen ja vaihtaa käyttöliittymän näkymän harjoitusnäkymään, jossa harjoituksen kysymyksiin vastataan yksi kerrallaan. Alla oleva sekvenssikaavio kuvaa uuden harjoituksen aloitusta.
 
 ![Sekvenssikaavio](sekvenssikaavio.png)
+
+## Tietojen pysyväistallennus
+
+Luokassa *TaskList* on toiminnot tehtävien lataamiseksi pysyväistallennuksessa käytettävästä tiedostosta ja tehtävien tallennus tiedostoon silloin, kun muistiinpanoja lisätään tai päivitetään.
+
+Tiedostossa *config.properties* määritetään pysyväistallennuksessa käytettävän tiedoston nimi.
+
+Tallennuksessa käytettävän tiedoston formaatissa yhden tehtävän tiedot ovat yhdellä rivillä tietyssä järjestyksessä ja erotettuna puolipisteellä.
