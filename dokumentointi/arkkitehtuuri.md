@@ -40,3 +40,9 @@ Luokassa *TaskList* on toiminnot tehtävien lataamiseksi pysyväistallennuksessa
 Tiedostossa *config.properties* määritetään pysyväistallennuksessa käytettävän tiedoston nimi.
 
 Tallennuksessa käytettävän tiedoston formaatissa yhden tehtävän tiedot ovat yhdellä rivillä tietyssä järjestyksessä ja erotettuna puolipisteellä.
+
+## Ohjelman rakenteeseen jääneet heikkoudet
+
+DAO-rajapintojen toteutusta harkittiin, mutta koska tiedostoja käsitellään vain kahden metodin kautta, tuntui siltä, että DAO-rakenne ei olisi tässä vaiheessa tuonut juurikaan höytyä.
+
+Käyttöliittymä on toteutettu lähes kokonaan yhteen metodiin. Vaikka metodissa on melko paljon selventäviä kommentteja, olisi ehkä parempi jakaa käyttöliittymän toteutus jollain tavalla pienempiin osiin.
