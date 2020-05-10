@@ -30,6 +30,4 @@ Kaikki toteutetut perustoiminnallisuudet on käyty läpi ja syöttökenttiä on 
 
 Käyttöliittymä on toteutettu perusasetuksilla ja siksi sen visuaalinen ulkoasu ei ole erityisen hyvä. Harjoitustyön aikana on keskitytty lähes täysin toiminnallisuuden toteuttamiseen.
 
-Alussa tavoitteena ollut perustoiminnallisuus on toteutettu ja lisäksi on toteutettu muutama lisätoiminnallisuus, kuten muistiinpanojen tallennus. Koska sovellus jää todelliseen käyttöön myös harjoitustyön toteutuksen jälkeen, sovelluksen toiminnallisuutta on tarkoitus laajentaa myös kurssin päättymisen jälkeen.
-
-DAO-rajapintojen toteutusta harkittiin, mutta koska tiedostoja käsitellään vain kahden metodin kautta, tuntui siltä, että DAO-rakenne ei olisi tässä vaiheessa tuonut juurikaan höytyä.
+Sovelluksen toiminnallisuus on melko yksinkertainen. Kuitenkin alussa tavoitteena ollut perustoiminnallisuus on toteutettu ja lisäksi on toteutettu muutama lisätoiminnallisuus, kuten muistiinpanojen tallennus. Koska sovellus jää todelliseen käyttöön myös harjoitustyön toteutuksen jälkeen, sovelluksen toiminnallisuutta on tarkoitus laajentaa myös kurssin päättymisen jälkeen.
