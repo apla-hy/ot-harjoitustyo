@@ -21,4 +21,12 @@ päivä | aika | mitä tein
 27.4. | 2 | Toteutettu valmiiksi graafisen käyttöliittymän perustoiminnallisuus. Päivitetty dokumentteja ja työaikakirjanpito.
 27.4. | 2 | Kirjoitettu JavaDoc:eja. Komento ’mvn javadoc:javadoc’ ei toiminut. Selvitetty ongelmaa ja ratkaistu se.
 28.4. | 3 | Kirjoitettu uusia dokumentteja. Laajennettu olemassa olleita dokumentteja. Tehty pieniä korjauksia. Tehty uusi release. Testattu virtuaalityöpöydän avulla, että sovelluksen nykyinen versio toimii yliopiston ympäristössä.
-yht | 41 |
+7.5. | 2 | Muutettu tiedostoformaattia siten, että samassa tiedostossa voi olla eri tyyppisiä sanoja. Lisätty tiedostoformaattiin muistiinpanot/esimerkit. Siirretty tiedostojen määritys tiedostoon config.properties. Muokattu käyttöliittymää ja testejä.
+7.5. | 1 | Muutettu tiedostojen käsittelyä siten, että kaikki tiedot ovat yhdessä tiedostossa. Poistettu tekstikäyttöliittymä tarpeettomana.
+8.5. | 2 | Toteutettu muistiinpanojen tallennus.
+8.5. | 2 | Parannettu virheiden käsittelyä. Testattu sovellusta mm. virheellisillä syötteillä ja tiedostoilla.
+8.5. | 2 | Lisätty mahdollisuus valita aloituskirjain tehtäville. Muokattu käyttöliittymän asettelua.
+9.5. | 1 | Tehty testit uusille toiminnallisuuksille. Tehty pieniä korjauksia.
+9.5. | 2 | Kirjoitettu dokumentteja.
+10.5. | 3 | Päivitetty arkkitehtuurikuvaus ja muita dokumentteja. Luotu loppupalautus-release. Testattu, että sovellus toimii yliopiston ympäristössä.
+yht | 56 |
