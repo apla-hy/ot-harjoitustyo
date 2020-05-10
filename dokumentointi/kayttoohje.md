@@ -4,7 +4,7 @@ Lataa tiedostot *languagetrainer.jar*, *vocabulary.csv* ja *config.properties*.
 
 ## Konfigurointi
 
-Ohjelma olettaa, että sen käynnistyshakemistossa on tiedosto config.properties ja tehtävien pysyväistallennukseen käytettävä tiedosto. Tallennukseen käytettävän tiedoston nimi määritetään tiedostossa config.properties ja sen nimi on oletuksena vocabulary.csv. Ohjelman käyttäminen oletusasetuksilla siis onnistuu lataamalla yllä mainitut kolme tiedostoa samaan hakemistoon.
+Ohjelma olettaa, että sen käynnistyshakemistossa on tiedosto *config.properties* ja tehtävien pysyväistallennukseen käytettävä tiedosto. Tallennukseen käytettävän tiedoston nimi määritetään tiedostossa *config.properties* ja sen nimi on oletuksena *vocabulary.csv*. Ohjelman käyttäminen oletusasetuksilla siis onnistuu lataamalla yllä mainitut kolme tiedostoa samaan hakemistoon.
 
 ## Ohjelman käynnistäminen
 
