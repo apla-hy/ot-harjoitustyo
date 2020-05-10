@@ -2,7 +2,7 @@
 
 ## Rakenne
 
-Sovelluksen rakenteessa käyttöliittymät ja sovelluslogiikka on erotettu toisistaan. Pakkausrakenne on seuraava:
+Sovelluksen rakenteessa käyttöliittymä ja sovelluslogiikka on erotettu toisistaan. Pakkausrakenne on seuraava:
 * languagetrainer.main
 * languagetrainer.ui
 * languagetrainer.domain
