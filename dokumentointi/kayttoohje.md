@@ -16,7 +16,7 @@ java -jar languagetrainer.jar
 
 ## Ohjelman käyttäminen
 
-Ohjelma käynnistyy näkymään, jossa voi valita sopivat vaihtoehdot uudelle harjoitukselle. Aloituskirjaimen valinta tarkoittaa sitä, että tehtäviin valitaan vain aloituskirjaimesta alkaen aakkosjärjestyksessä eteenpäin olevat espanjankieliset sanat. Jos harjoitukseen valitaan kaikki mahdolliset ohjelman sanastossa olevat sanat, valitaan aloituskirjaimeksi oletus ole a.
+Ohjelma käynnistyy näkymään, jossa voi valita sopivat vaihtoehdot uudelle harjoitukselle. Aloituskirjaimen valinta tarkoittaa sitä, että tehtäviin valitaan espanjankieliset sanat, joiden alkukirjain on valittu kirjain tai aakkosjärjestyksessä sen jälkeen. Jos harjoitukseen valitaan kaikki sanaston sanat riippumatta alkukirjaimesta, valitaan aloituskirjaimeksi oletus eli *a*.
 
 ![Aloitusnäkymä](kayttoliittyma1.png)
 
